@@ -30,24 +30,30 @@ const ProcessFlowThird = () => {
     }
 
     return (
-        <section className="section transition-all">
-            <div className="section-wrapper w-full flex justify-center items-center gap-10 lg:py-4">
+        <section className="transition-all section">
+            <div className="flex items-center justify-center w-full gap-10 section-wrapper lg:py-4">
                 <div className='w-full'>
                     <div className='w-52'>
                         <Image src={Spaceship} alt='Spaceship' />
                     </div>
                 </div>
-                <div className='w-full flex flex-col justify-center items-center h-full'>
+                <div className='flex flex-col items-center justify-center w-full h-full'>
                     <div className='max-w-xl mx-auto'>
                         <h1 className='heading'>{headingData}</h1>
-                        {/* <article className='flex justify-evenly items-center w-full h-full'> */}
+                        {/* <article className='flex items-center w-full h-full justify-evenly'> */}
                         <p className='max-w-xl pb-5'>
                             {articleData}
                         </p>
                         {/* </article> */}
 
-                        <div className='flex justify-center items-center gap-3 flex-wrap mt-auto'>
+                        {/* <div className='flex flex-wrap items-center justify-center gap-3 mt-auto'>
                             <button onClick={() => Prototyping()} className={'border-2 min-w-[10rem] border-white px-3 py-2 bg-mainRed text-white'}>Prototyping</button>
+                            <button onClick={() => MVP()} className={'border-2 min-w-[10rem] border-white px-3 py-2 bg-mainRed text-white'}>MVP</button>
+                            <button onClick={() => WebsiteDevelopment()} className={'border-2 min-w-[10rem] border-white px-3 py-2 bg-mainRed text-white'}>Website Development</button>
+                            <button onClick={() => AppDevelopment()} className={'border-2 min-w-[10rem] border-white px-3 py-2 bg-mainRed text-white'}>App Development</button>
+                        </div> */}
+                        <div class="grid grid-cols-2 md:grid-cols-4">
+                        <button onClick={() => Prototyping()} className={'border-2 min-w-[10rem] border-white px-3 py-2 bg-mainRed text-white'}>Prototyping</button>
                             <button onClick={() => MVP()} className={'border-2 min-w-[10rem] border-white px-3 py-2 bg-mainRed text-white'}>MVP</button>
                             <button onClick={() => WebsiteDevelopment()} className={'border-2 min-w-[10rem] border-white px-3 py-2 bg-mainRed text-white'}>Website Development</button>
                             <button onClick={() => AppDevelopment()} className={'border-2 min-w-[10rem] border-white px-3 py-2 bg-mainRed text-white'}>App Development</button>

@@ -1,7 +1,7 @@
 import Router from 'next/router'
 // imgs
 import AstraunotDrinkingCofee from '../../public/imgs/astraunotDrinkingCofee.png'
-import astraunotincup from '../../public/imgs/astraunot in cup.png'
+import astraunotincup from '../../public/imgs/astraunot in cup with white fill.png'
 import TitleImgCard from '../common/TitleImgCard'
 
 
@@ -9,7 +9,7 @@ import TitleImgCard from '../common/TitleImgCard'
 const TwoCards = () => {
     return (
         <section className='section'>
-            <div className='section-wrapper flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10 lg:gap-28 h-full'>
+            <div className='flex flex-col items-center justify-center h-full gap-6 section-wrapper md:flex-row md:gap-10 lg:gap-28'>
                 <TitleImgCard
                     title={'Marketing'}
                     titleClassName='text-5xl uppercase mb-8 font-bold'

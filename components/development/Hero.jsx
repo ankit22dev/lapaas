@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import { useState } from 'react';
-import HeroImg from '../../public/imgs/heroImg.png'
+import astraunotDrinkingCofee from '../../public/imgs/developmentPageTop.png'
 import FloatingAstraunotBlack from '../../public/imgs/floatingAstraunotWhite.png'
 import Rocket from '../../public/imgs/spaceship.png'
 import CloseIcon from '../../public/svgs/close.svg'
 import Link from 'next/link';
 
 
-const TopHero = ({ comp }) => {
+const Hero = ({ comp }) => {
 
     const [slide, setSlide] = useState(false);
 
@@ -30,9 +30,10 @@ const TopHero = ({ comp }) => {
                 >
                     <div className="flex flex-col max-w-xl py-12">
                         <div className="items-center justify-center">
-                            <h1 className="heading"><div className="text-left">TRANSFORM YOUR BUSINESS WITH BUSINESS CONSULTING SERVICES</div></h1>
+                            <h1 className="heading">
+                                <div className="text-left">Make your idea a reality</div></h1>
                             <p className='space-y-2 text-base tracking-wider text-left md:text-lg'>
-                                If you’re ready to take the next step toward success then it’s time to get Business consulting services! Whether it be launching a new product or simply getting more leads and sales, Entrepreneur Sahil Khanna has the expertise necessary to make it happen.
+                                Lapaas is a product development company that helps startups and businesses take their products from idea to market. We have a team of experienced engineers, designers, and marketers who can help you with everything from product design to marketing strategy. We offer a range of services including product design, MVP, website development and app development.
                             </p>
                         </div>
                         <div class="mt-6">
@@ -43,8 +44,8 @@ const TopHero = ({ comp }) => {
                 <div
                     className={`${slide ? "w-full" : "w-2/5"} relative origin-right overflow-hidden transition-all duration-1000 flex py-12 flex-col justify-center items-center`}
                 >
-                    <div className='relative hidden w-5/12 lg:block' id='heroImg'>
-                        <Image src={Rocket} alt="HeroImg" className='w-full h-full' />
+                    <div className='relative hidden w-8/12 lg:block' id='heroImg'>
+                        <Image src={astraunotDrinkingCofee} alt="HeroImg" className='w-full h-full' />
                     </div>
                     <button type='button' className={`red-btn transition-all mt-auto duration-1000 ${slide ? 'opacity-100 visible' : 'opacity-0 hidden'}`} onClick={() => {
                         comp.fullpageApi.moveSectionDown()
@@ -77,4 +78,4 @@ const TopHero = ({ comp }) => {
     )
 }
 
-export default TopHero
+export default Hero
