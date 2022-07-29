@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.admin-layout{
+    font-family: 'Poppins', sans-serif;
+}
+
+.default-layout{
+    background-repeat: no-repeat;
+    background-size: cover;
+     /* background-position: 50px 0; */
+}
+
+/*
+.section {
+    min-height: calc(100vh - 4rem) !important;
+    padding: 4.5rem 0 2rem 0 !important;
+    overflow-x: hidden;
+}
+
+.section-wrapper {
+    @apply max-w-6xl mx-auto h-auto lg:h-full w-full px-8
+}
+
+**/
+
+.heading {
+    @apply uppercase font-bold mb-6 text-3xl md:text-5xl text-center;
+}
+
+.section {
+    /* min-height: calc(100vh - 4rem) !important; */
+    /* overflow-x: hidden; */
+    /* padding: 4rem 10px 2rem; */
+    padding: 4rem 2rem;
+}
+
+.scrolling-section{
+    padding: 0 !important;
+}
+
+.section-wrapper {
+    @apply max-w-6xl h-auto xl:h-full mx-auto w-full
+}
+
+.card {
+    @apply border-8 border-white bg-mainRed text-center py-10 px-12 md:py-8 md:px-4 lg:py-10 lg:px-12 flex flex-col justify-center items-center
+}
+
+.card-title {
+    @apply uppercase text-3xl md:text-5xl font-bold mb-6
+}
+
+.red-btn {
+    @apply bg-mainRed text-xl uppercase rounded-full py-2 px-6 font-bold text-white outline-none
+}
+
+.liteYellow-btn {
+    @apply bg-liteYellow text-xl uppercase rounded-full py-2 px-6 font-bold text-black
+}
+
+.img-card {
+    @apply backdrop-blur-sm flex justify-center items-center flex-col p-8
+}
+
+.form-question {
+    @apply capitalize font-bold text-2xl mb-1 md:mb-2
+}
+
+.input-field{
+    @apply w-full outline-none rounded-sm py-2 px-4 text-black font-['Poppins']
+}
+
+.img-wrapper span{
+    height: 100% !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+p{
+    text-align: center;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+.fp-watermark {
+    display: none;
+}
+
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span {
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+
+.fp-overflow::-webkit-scrollbar {
+    display: none;
+}
+
+#fp-nav ul li a span {
+    background: #fff !important;
+}
+
+#heroImg {
+    -webkit-animation: move 1s alternate infinite;
+    animation: move 1s alternate infinite;
+}
+
+#flyingAstroImg {
+    -webkit-animation: flyingAstroImg 1s alternate infinite;
+    animation: flyingAstroImg 1s alternate infinite;
+}
+
+@-webkit-keyframes move {
+    to {
+        bottom: 100 !important;
+    }
+
+    from {
+        bottom: 0 !important;
+    }
+}
+
+@keyframes move {
+    to {
+        top: 0;
+        right: 0;
+    }from {
+
+        right: 10px;
+        top: 10px;
+    }
+}
+
+@-webkit-keyframes flyingAstroImg {
+    to {
+        bottom: 0rem;
+    }
+
+    from {
+        bottom: 2.5rem;
+    }
+}
+
+@keyframes flyingAstroImg {
+    to {
+        bottom: 0rem;
+    }
+
+    from {
+        bottom: 1rem;
+    }
+}
