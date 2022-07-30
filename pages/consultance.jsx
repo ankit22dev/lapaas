@@ -9,6 +9,7 @@ import D2C from '../components/marketing/D2C'
 import TopHero from '../components/consultation/TopHero'
 import Suggestion from '../components/consultation/Suggestion'
 import ScrollingWhyUs from '../components/consultation/ScrollingWhyUs'
+import Form from '../components/consultation/Form'
 
 const consultation = () => {
     return (
@@ -19,7 +20,7 @@ const consultation = () => {
                 (
                     <ReactFullpage.Wrapper>
                         {/* <Hero /> */}
-                        <TopHero />
+                        <TopHero comp={comp} />
                         {/* <MVP
                             title={'Why marketing is an important?'}
                         /> */}
@@ -27,6 +28,7 @@ const consultation = () => {
                         <B2B />
                         <D2C />
                         <ScrollingWhyUs />
+                        <Form />
                     </ReactFullpage.Wrapper>
                 )
                 }

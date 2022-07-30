@@ -10,6 +10,7 @@ import ScrollingWhyUs from '../components/marketing/ScrollingWhyUs'
 import ProcessFlowThird from '../components/marketing/ProcessFlowThird'
 import ProcessFlowFourth from '../components/marketing/ProcessFlowFourth'
 import Suggestion from '../components/marketing/Suggestion'
+import Form from '../components/marketing/Form'
 
 
 
@@ -22,7 +23,7 @@ const Marketing = () => {
                 render={comp =>
                 (
                     <ReactFullpage.Wrapper>
-                        <Hero />
+                        <Hero comp={comp} />
                         <TwoCards comp={comp} />
                         <ProcessFlowThird />
                         <ProcessFlowFourth />
@@ -30,6 +31,7 @@ const Marketing = () => {
                         <B2B />
                         <D2C />
                         <ScrollingWhyUs />
+                        <Form />
                     </ReactFullpage.Wrapper>
                 )
                 }
