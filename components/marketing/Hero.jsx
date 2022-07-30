@@ -35,7 +35,7 @@ const Hero = ({ comp }) => {
                             <p className='space-y-2 text-base tracking-wider text-left md:text-lg'>We are Lapaas, a marketing agency that is 100% invested in your success. We believe that when our clients succeed, we succeed.. From start to finish, we will be there with you every step of the way to ensure that you reach your goals. We want to see you succeed and we will do everything in our power to help you get there. </p>
                         </div>
                         <div class="mt-6">
-                            <button type='button' className='w-auto mx-2 mt-2 red-btn' onClick={() => setSlide(true)}>Get Quote</button>
+                            <button type='button' className='w-auto mx-2 mt-2 red-btn' onClick={() => comp.fullpageApi.moveTo(9)}>Get Quote</button>
                         </div>
                     </div>
                 </div>

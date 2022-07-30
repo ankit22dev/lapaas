@@ -37,7 +37,7 @@ const Hero = ({ comp }) => {
                             </p>
                         </div>
                         <div class="mt-6">
-                            <button type='button' className='w-auto mx-2 mt-2 red-btn' onClick={() => setSlide(true)}>Get Quote</button>
+                            <button type='button' className='w-auto mx-2 mt-2 red-btn' onClick={() => comp.fullpageApi.moveTo(5)}>Get Quote</button>
                         </div>
                     </div>
                 </div>
