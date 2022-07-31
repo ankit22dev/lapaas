@@ -2,8 +2,8 @@
   "IdeaValidation": false,
   "BusinessGrowth": true,
   "Marketing": false,
-  "CompanyBio": "Company Bio Test Final",
-  "NameUser": "Name Test Final",
+  "CompanyBio": "Company Bio Test",
+  "NameUser": "Username",
   "PhoneNumber": "9876543210",
-  "EmailUser": "email@testfinal.com"
+  "EmailUser": "email@test.com"
 }
