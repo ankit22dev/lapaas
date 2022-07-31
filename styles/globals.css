@@ -29,7 +29,7 @@
 **/
 
 .heading {
-    @apply mb-6 text-3xl font-bold text-center uppercase md:text-5xl;
+    @apply uppercase font-bold mb-6 text-3xl md:text-5xl text-center;
 }
 
 .section {
