@@ -12,7 +12,7 @@ const TopHero = ({ comp }) => {
     const [slide, setSlide] = useState(false);
 
     return (
-        <section className="section">
+        <section className="section active">
             <div className='relative flex h-full px-6 py-8'>
                 <div
                     className={`${slide ? "w-full" : "w-0"
@@ -35,15 +35,15 @@ const TopHero = ({ comp }) => {
                                 If you’re ready to take the next step toward success then it’s time to get Business consulting services! Whether it be launching a new product or simply getting more leads and sales, Entrepreneur Sahil Khanna has the expertise necessary to make it happen.
                             </p>
                         </div>
-                        <div class="mt-6">
-                            <button type='button' className='w-auto mx-2 mt-2 red-btn' onClick={() => comp.fullpageApi.moveTo(6)}>Get Quote</button>
+                        <div className="mt-6">
+                            <button type='button' className='w-auto mx-2 mt-2 red-btn' onClick={() => comp.fullpageApi.moveTo(4)}>Get Quote</button>
                         </div>
                     </div>
                 </div>
                 <div
                     className={`${slide ? "w-full" : "w-2/5"} relative origin-right overflow-hidden transition-all duration-1000 flex py-12 flex-col justify-center items-center`}
                 >
-                    <div className='relative hidden w-5/12 lg:block' id='heroImg'>
+                    <div className='relative hidden w-1/2 lg:block' id='heroImg'>
                         <Image src={Rocket} alt="HeroImg" className='w-full h-full' />
                     </div>
                     <button type='button' className={`red-btn transition-all mt-auto duration-1000 ${slide ? 'opacity-100 visible' : 'opacity-0 hidden'}`} onClick={() => {

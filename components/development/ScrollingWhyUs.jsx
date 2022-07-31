@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactFullpage from '@fullpage/react-fullpage'
 import Image from 'next/image'
-import WhyNotAstraunotBlue from '../../public/imgs/whyNotAstraunotBlue.png'
+import WhyNotAstraunotBlue from '../../public/imgs/whyUsBlue.png'
 
 const ScrollingWhyUs = () => {
     return (

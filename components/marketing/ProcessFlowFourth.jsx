@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
-import TitleCard from '../common/TitleCard'
 import Image from 'next/image'
-import Spaceship from '../../public/imgs/spaceship.png'
+
+import MoonSurfaceRed from '../../public/imgs/moonSurfaceRed.png'
+import SkatingAstraunot from '../../public/imgs/skatingAstraunot.png'
+
 
 const ProcessFlowFourth = () => {
     const [headingData, setHeadingData] = useState("BOOST YOUR ROI WITH PERFORMANCE MARKETING")
@@ -26,9 +28,15 @@ const ProcessFlowFourth = () => {
         <section className="section transition-all">
             <div className="section-wrapper w-full flex justify-center items-center gap-10 lg:py-4">
                 <div className='w-full'>
-                    <div className='w-52'>
-                        <Image src={Spaceship} alt='Spaceship' />
+                <div className={`cursor-pointer bg-mainRed text-center py-8 px-4 lg:py-10 lg:px-8 xl:h-[500px] xl:w-[450px] lg:h-[450px] lg:w-[400px] h-[350px] w-[300px] relative border-8 border-white`}>
+                    <h4 className={`text-5xl uppercase mb-8 font-bold z-10 relative`}>Branding</h4>
+                    <div className={`absolute left-0 bottom-0  img-wrapper z-0`}>
+                        <Image src={MoonSurfaceRed} alt="HeroImg" className='w-full h-full' />
                     </div>
+                    <div className={`w-56 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 img-wrapper z-0`}>
+                        <Image src={SkatingAstraunot} alt="HeroImg" className='w-full h-full' id='heroImg' />
+                    </div>
+                </div>
                 </div>
                 <div className='w-full flex flex-col justify-center items-center h-full'>
                     <div className='max-w-xl mx-auto'>

@@ -52,7 +52,7 @@ const ProcessFlowThird = () => {
                             <button onClick={() => WebsiteDevelopment()} className={'border-2 min-w-[10rem] border-white px-3 py-2 bg-mainRed text-white'}>Website Development</button>
                             <button onClick={() => AppDevelopment()} className={'border-2 min-w-[10rem] border-white px-3 py-2 bg-mainRed text-white'}>App Development</button>
                         </div> */}
-                        <div class="grid grid-cols-2 md:grid-cols-4">
+                        <div className="grid grid-cols-2 md:grid-cols-4">
                             <button onClick={() => Prototyping()} className={'border-2 m-1 border-white py-2 bg-mainRed text-white'}>Prototyping</button>
                             <button onClick={() => MVP()} className={'border-2 m-1 border-white py-2 bg-mainRed text-white'}>MVP</button>
                             <button onClick={() => WebsiteDevelopment()} className={'border-2 m-1 border-white py-2 bg-mainRed text-white'}>Website Development</button>

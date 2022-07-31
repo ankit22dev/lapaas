@@ -1,34 +1,38 @@
 import React from 'react'
-import ReactFullpage from '@fullpage/react-fullpage'
 import Image from 'next/image'
-import WhyNotAstraunotBlue from '../../public/imgs/whyNotAstraunotBlue.png'
+import whyUsBlack from '../../public/imgs/whyUsBlack.png'
+import whyUsBlue from '../../public/imgs/whyUsBlue.png'
 
-const ScrollingWhyUs = () => {
+const ScrollingWhyUs = ({ isHome = false }) => {
     return (
         <section className='section scrolling-section'>
             <div className="flex">
                 <div className='w-1/2 max-h-screen sticky top-0 left-0 flex justify-center items-center'>
                     <div className='w-[45vw] absolute left-1/2 -translate-x-1/2 bottom-0 hidden lg:block'>
-                        <Image src={WhyNotAstraunotBlue} alt="HeroImg" className='w-full h-full' />
+                        {isHome ?
+                            <Image src={whyUsBlack} alt="HeroImg" className='w-full h-full' />
+                            :
+                            <Image src={whyUsBlue} alt="HeroImg" className='w-full h-full' />
+                        }
                     </div>
                 </div>
                 <div className='w-1/2 overflow-y-auto scrolling-whyUs'>
-                    <div className='h-screen flex justify-center items-center'>
+                <div className='h-screen flex justify-center items-center'>
                         <div className='max-w-lg px-4 text-center'>
-                            <h1 className='heading'>Strategic Business Plan</h1>
-                            <p className='trackind-wide font-medium md:font-semibold text-lg '>In business consultation, you will get a great strategic plan to help your business grow.</p>
+                            <h1 className='heading'>Advanced Marketing Strategies</h1>
+                            <p className='trackind-wide font-medium md:font-semibold text-lg '>We use advanced and proven strategies to bring results in a cost effective manner.</p>
                         </div>
                     </div>
                     <div className='h-screen flex justify-center items-center'>
                         <div className='max-w-lg px-4 text-center'>
-                            <h1 className='heading'>Unique Growth Strategies</h1>
-                            <p className='trackind-wide font-medium md:font-semibold text-lg '>We will help you build your business and create new strategies for growth.</p>
+                            <h1 className='heading'>11+ Years of Experience</h1>
+                            <p className='trackind-wide font-medium md:font-semibold text-lg '>We have 11+ years of experience so we know what works or what doesn&apos;t work.</p>
                         </div>
                     </div>
                     <div className='h-screen flex justify-center items-center'>
                         <div className='max-w-lg px-4 text-center'>
-                            <h1 className='heading'>Unbiased Feedback</h1>
-                            <p className='trackind-wide font-medium md:font-semibold text-lg '>In business consultation, you will have an honest opinion about your business and on how you can improve it.</p>
+                            <h1 className='heading'>Detailed Reporting</h1>
+                            <p className='trackind-wide font-medium md:font-semibold text-lg '>We provide clear, concise reporting to our clients for their marketing campaigns.</p>
                         </div>
                     </div>
                 </div>

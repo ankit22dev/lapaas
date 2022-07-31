@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import SayingHIastraunotBlack from '../../public/imgs/sayingHIastraunotBlack.png'
+import SayingHIastraunotBlack from '../../public/imgs/floatingAstraunotWhite.png'
 
 const ThreeImgs = () => {
     return (

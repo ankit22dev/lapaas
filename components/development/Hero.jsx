@@ -12,7 +12,7 @@ const Hero = ({ comp }) => {
     const [slide, setSlide] = useState(false);
 
     return (
-        <section className="section">
+        <section className="section active">
             <div className='relative flex h-full px-6 py-8'>
                 <div
                     className={`${slide ? "w-full" : "w-0"
@@ -36,15 +36,15 @@ const Hero = ({ comp }) => {
                                 Lapaas is a product development company that helps startups and businesses take their products from idea to market. We have a team of experienced engineers, designers, and marketers who can help you with everything from product design to marketing strategy. We offer a range of services including product design, MVP, website development and app development.
                             </p>
                         </div>
-                        <div class="mt-6">
-                            <button type='button' className='w-auto mx-2 mt-2 red-btn' onClick={() => comp.fullpageApi.moveTo(5)}>Get Quote</button>
+                        <div className="mt-6">
+                            <button type='button' className='w-auto mx-2 mt-2 red-btn' onClick={() => comp.fullpageApi.moveTo(4)}>Get Quote</button>
                         </div>
                     </div>
                 </div>
                 <div
                     className={`${slide ? "w-full" : "w-2/5"} relative origin-right overflow-hidden transition-all duration-1000 flex py-12 flex-col justify-center items-center`}
                 >
-                    <div className='relative hidden w-8/12 lg:block' id='heroImg'>
+                    <div className='relative hidden w-1/2 lg:block' id='heroImg'>
                         <Image src={astraunotDrinkingCofee} alt="HeroImg" className='w-full h-full' />
                     </div>
                     <button type='button' className={`red-btn transition-all mt-auto duration-1000 ${slide ? 'opacity-100 visible' : 'opacity-0 hidden'}`} onClick={() => {

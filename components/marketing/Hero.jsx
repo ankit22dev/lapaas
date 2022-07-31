@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { useState } from 'react';
-import HeroImg from '../../public/imgs/heroImg.png'
 import FloatingAstraunotBlack from '../../public/imgs/floatingAstraunotWhite.png'
 import Rocket from '../../public/imgs/spaceship.png'
 import CloseIcon from '../../public/svgs/close.svg'
@@ -13,7 +12,7 @@ const Hero = ({ comp }) => {
     const [slide, setSlide] = useState(false);
 
     return (
-        <section className="section">
+        <section className="section active">
             <div className='relative flex h-full px-6 py-8'>
                 <div
                     className={`${slide ? "w-full" : "w-0"
@@ -31,18 +30,18 @@ const Hero = ({ comp }) => {
                 >
                     <div className="flex flex-col max-w-xl py-12 ">
                         <div className="items-center justify-center">
-                            <h1 className="heading"><div className="text-left">We'll help you get the most out of your marketing budget</div></h1>
+                            <h1 className="heading"><div className="text-left">We&apos;ll help you get the most out of your marketing budget</div></h1>
                             <p className='space-y-2 text-base tracking-wider text-left md:text-lg'>We are Lapaas, a marketing agency that is 100% invested in your success. We believe that when our clients succeed, we succeed.. From start to finish, we will be there with you every step of the way to ensure that you reach your goals. We want to see you succeed and we will do everything in our power to help you get there. </p>
                         </div>
-                        <div class="mt-6">
-                            <button type='button' className='w-auto mx-2 mt-2 red-btn' onClick={() => comp.fullpageApi.moveTo(9)}>Get Quote</button>
+                        <div className="mt-6">
+                            <button type='button' className='w-auto mx-2 mt-2 red-btn' onClick={() => comp.fullpageApi.moveTo(8)}>Get Quote</button>
                         </div>
                     </div>
                 </div>
                 <div
                     className={`${slide ? "w-full" : "w-2/5"} relative origin-right overflow-hidden transition-all duration-1000 flex py-12 flex-col justify-center items-center `}
                 >
-                    <div className='relative hidden w-8/12 lg:block' id='heroImg'>
+                    <div className='relative hidden w-1/2 lg:block' id='heroImg'>
                         <Image src={astraunotincup} alt="HeroImg" className='w-full h-full' />
                     </div>
                     <button type='button' className={`red-btn transition-all mt-auto duration-1000 ${slide ? 'opacity-100 visible' : 'opacity-0 hidden'}`} onClick={() => {
@@ -77,4 +76,3 @@ const Hero = ({ comp }) => {
 }
 
 export default Hero
-

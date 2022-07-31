@@ -1,32 +1,36 @@
-import AstraunotDrinkingCofee from '../../public/imgs/astraunotDrinkingCofee.png'
-import AstraunotWithFlag from '../../public/imgs/astraunotWithFlag.png'
-import TitleImgCard from '../common/TitleImgCard'
+import Image from 'next/image'
+import Bulb from '../../public/imgs/bulb.png'
+import FloatingAstraunotWhite from '../../public/imgs/floatingAstraunotWhite.png'
+import MoonSurfaceRed from '../../public/imgs/moonSurfaceRed.png'
+import SkatingAstraunot from '../../public/imgs/skatingAstraunot.png'
 
 
 const TwoCards = ({ comp }) => {
     return (
         <section className='section'>
             <div className='section-wrapper flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10 lg:gap-28 h-full'>
-                <TitleImgCard
-                    title={'Branding'}
-                    titleClassName='text-5xl uppercase mb-8 font-bold'
-                    imgName={AstraunotWithFlag}
-                    imgClassName={'absolute top-0 right-0 left-0 bottom-0 img-wrapper'}
-                    className='border-8 cursor-pointer border-white bg-mainRed text-center py-8 px-4 lg:py-10 lg:px-8 xl:h-[500px] xl:w-[450px] lg:h-[450px] lg:w-[400px] h-[350px] w-[300px]'
-                    onClick={() => {
-                        comp.fullpageApi.moveTo(3);
-                    }}
-                />
-                <TitleImgCard
-                    title={'Performance'}
-                    titleClassName='text-5xl uppercase mb-8 font-bold'
-                    imgName={AstraunotDrinkingCofee}
-                    imgClassName={'lg:w-72 w-32 relative mx-auto'}
-                    className='border-8 cursor-pointer border-white bg-mainRed text-center py-8 px-4 lg:py-10 lg:px-8 xl:h-[500px] xl:w-[450px] lg:h-[450px] lg:w-[400px] h-[350px] w-[300px]'
-                    onClick={() => {
-                        comp.fullpageApi.moveTo(4);
-                    }}
-                />
+                <div className={`cursor-pointer bg-mainRed text-center py-8 px-4 lg:py-10 lg:px-8 xl:h-[500px] xl:w-[450px] lg:h-[450px] lg:w-[400px] h-[350px] w-[300px] relative border-8 border-white`} onClick={() => {
+                    comp.fullpageApi.moveTo(3);
+                }}>
+                    <h4 className={`text-5xl uppercase mb-8 font-bold z-10 relative`}>Branding</h4>
+                    <div className={`absolute top-0 right-0 left-0 bottom-0 img-wrapper z-0`}>
+                        <Image src={Bulb} alt="HeroImg" className='w-full h-full' />
+                    </div>
+                    <div className={`w-28 h-40 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 img-wrapper z-0`}>
+                        <Image src={FloatingAstraunotWhite} alt="HeroImg" className='w-full h-full' id='heroImg' />
+                    </div>
+                </div>
+                <div className={`cursor-pointer bg-mainRed text-center py-8 px-4 lg:py-10 lg:px-8 xl:h-[500px] xl:w-[450px] lg:h-[450px] lg:w-[400px] h-[350px] w-[300px] relative border-8 border-white`} onClick={() => {
+                    comp.fullpageApi.moveTo(4);
+                }}>
+                    <h4 className={`text-5xl uppercase mb-8 font-bold z-10 relative`}>Branding</h4>
+                    <div className={`absolute left-0 bottom-0  img-wrapper z-0`}>
+                        <Image src={MoonSurfaceRed} alt="HeroImg" className='w-full h-full' />
+                    </div>
+                    <div className={`w-56 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 img-wrapper z-0`}>
+                        <Image src={SkatingAstraunot} alt="HeroImg" className='w-full h-full' id='heroImg' />
+                    </div>
+                </div>
             </div>
         </section>
     )

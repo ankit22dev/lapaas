@@ -65,7 +65,7 @@ const NavigationMenu = ({ isNavOpen, setIsNavOpen }) => {
                         <div className='flex flex-col gap-8 pr-4 mr-4 border-r-2 border-white'>
                             <ul className='capitalize flex flex-col justify-center items-end gap-2'>
                                 {/* , ,  */}
-                                <li>lapaasindia@gmail.com</li>
+                                <li>Lapaasindia@Gmail.Com</li>
                                 <li>+91 95400 65704</li>
                                 <li className='max-w-xs text-right'>455, Ground Floor, Bawana Rd,near Delhi Technical University,Shahbad Daulatpur Village</li>
                                 <li>New Delhi, Delhi</li>
