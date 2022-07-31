@@ -28,7 +28,7 @@ const Hero = ({ comp }) => {
                     className={`${slide ? "w-0 opacity-0" : "w-full lg:w-3/5 opacity-100"
                         } overflow-hidden transition-all duration-1000 relative flex justify-center items-center`}
                 >
-                    <div className="flex flex-col max-w-xl py-12 mx-auto">
+                    <div className="flex flex-col max-w-xl py-12 mx-auto pt-0.5">
                         <div className="items-center justify-center">
                             <h1 className="heading">
                                 <div className="text-left">We&apos;ll help you get the most out of your marketing budget</div>
