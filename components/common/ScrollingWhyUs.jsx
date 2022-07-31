@@ -7,7 +7,7 @@ const ScrollingWhyUs = ({ isHome = false }) => {
     return (
         <section className='section scrolling-section'>
             <div className="flex">
-                <div className='w-1/2 max-h-screen sticky top-0 left-0 flex justify-center items-center'>
+                <div className='sticky top-0 left-0 flex items-center justify-center max-h-screen lg:w-1/2'>
                     <div className='w-[45vw] absolute left-1/2 -translate-x-1/2 bottom-0 hidden lg:block'>
                         {isHome ?
                             <Image src={whyUsBlack} alt="HeroImg" className='w-full h-full' />
@@ -16,23 +16,23 @@ const ScrollingWhyUs = ({ isHome = false }) => {
                         }
                     </div>
                 </div>
-                <div className='w-1/2 overflow-y-auto scrolling-whyUs'>
-                <div className='h-screen flex justify-center items-center'>
+                <div className='w-full overflow-y-auto lg:w-1/2 scrolling-whyUs'>
+                    <div className='flex items-center justify-center h-screen'>
                         <div className='max-w-lg px-4 text-center'>
                             <h1 className='heading'>Advanced Marketing Strategies</h1>
-                            <p className='trackind-wide font-medium md:font-semibold text-lg '>We use advanced and proven strategies to bring results in a cost effective manner.</p>
+                            <p className='text-lg font-medium trackind-wide md:font-semibold '>We use advanced and proven strategies to bring results in a cost effective manner.</p>
                         </div>
                     </div>
-                    <div className='h-screen flex justify-center items-center'>
+                    <div className='flex items-center justify-center h-screen'>
                         <div className='max-w-lg px-4 text-center'>
                             <h1 className='heading'>11+ Years of Experience</h1>
-                            <p className='trackind-wide font-medium md:font-semibold text-lg '>We have 11+ years of experience so we know what works or what doesn&apos;t work.</p>
+                            <p className='text-lg font-medium trackind-wide md:font-semibold '>We have 11+ years of experience so we know what works or what doesn&apos;t work.</p>
                         </div>
                     </div>
-                    <div className='h-screen flex justify-center items-center'>
+                    <div className='flex items-center justify-center h-screen'>
                         <div className='max-w-lg px-4 text-center'>
                             <h1 className='heading'>Detailed Reporting</h1>
-                            <p className='trackind-wide font-medium md:font-semibold text-lg '>We provide clear, concise reporting to our clients for their marketing campaigns.</p>
+                            <p className='text-lg font-medium trackind-wide md:font-semibold '>We provide clear, concise reporting to our clients for their marketing campaigns.</p>
                         </div>
                     </div>
                 </div>

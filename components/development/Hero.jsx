@@ -25,7 +25,7 @@ const Hero = ({ comp }) => {
                     <a target="_blank" href="https://course.lapaas.com/" rel="noopener noreferrer" className={`liteYellow-btn mt-auto`}>Course</a>
                 </div>
                 <div
-                    className={`${slide ? "w-0 opacity-0" : "w-3/5 opacity-100"
+                    className={`${slide ? "w-0 opacity-0" : "w-full lg:w-3/5 opacity-100"
                         } overflow-hidden transition-all duration-1000 relative flex justify-center items-center`}
                 >
                     <div className="flex flex-col max-w-xl py-12">
@@ -42,7 +42,7 @@ const Hero = ({ comp }) => {
                     </div>
                 </div>
                 <div
-                    className={`${slide ? "w-full" : "w-2/5"} relative origin-right overflow-hidden transition-all duration-1000 flex py-12 flex-col justify-center items-center`}
+                    className={`${slide ? "w-full" : "lg:w-2/5"} relative origin-right overflow-hidden transition-all duration-1000 flex py-12 flex-col justify-center items-center`}
                 >
                     <div className='relative hidden w-1/2 lg:block' id='heroImg'>
                         <Image src={astraunotDrinkingCofee} alt="HeroImg" className='w-full h-full' />

@@ -25,12 +25,14 @@ const TopHero = ({ comp }) => {
                     <a target="_blank" href="https://course.lapaas.com/" rel="noopener noreferrer" className={`liteYellow-btn mt-auto`}>Course</a>
                 </div>
                 <div
-                    className={`${slide ? "w-0 opacity-0" : "w-3/5 opacity-100"
+                    className={`${slide ? "w-0 opacity-0" : "w-full lg:w-3/5 opacity-100"
                         } overflow-hidden transition-all duration-1000 relative flex justify-center items-center`}
                 >
-                    <div className="flex flex-col max-w-xl py-12">
+                    <div className="flex flex-col max-w-xl py-12 mx-auto">
                         <div className="items-center justify-center">
-                            <h1 className="heading"><div className="text-left">TRANSFORM YOUR BUSINESS WITH BUSINESS CONSULTING SERVICES</div></h1>
+                            <h1 className="heading">
+                                <div className="text-left">TRANSFORM YOUR BUSINESS WITH BUSINESS CONSULTING SERVICES</div>
+                            </h1>
                             <p className='space-y-2 text-base tracking-wider text-left md:text-lg'>
                                 If you’re ready to take the next step toward success then it’s time to get Business consulting services! Whether it be launching a new product or simply getting more leads and sales, Entrepreneur Sahil Khanna has the expertise necessary to make it happen.
                             </p>
@@ -41,9 +43,10 @@ const TopHero = ({ comp }) => {
                     </div>
                 </div>
                 <div
-                    className={`${slide ? "w-full" : "w-2/5"} relative origin-right overflow-hidden transition-all duration-1000 flex py-12 flex-col justify-center items-center`}
+                    className={`${slide ? "w-full" : "lg:w-2/5"} relative origin-right overflow-hidden transition-all duration-1000 flex py-12 flex-col justify-center items-center`}
                 >
-                    <div className='relative hidden w-1/2 lg:block' id='heroImg'>
+                    {/* <div className='relative hidden w-1/2 lg:block' id='heroImg'> */}
+                    <div className={`${slide ? "w-60" : "lg:w-1/2"} relative hidden lg:block`} id='heroImg'>
                         <Image src={Rocket} alt="HeroImg" className='w-full h-full' />
                     </div>
                     <button type='button' className={`red-btn transition-all mt-auto duration-1000 ${slide ? 'opacity-100 visible' : 'opacity-0 hidden'}`} onClick={() => {

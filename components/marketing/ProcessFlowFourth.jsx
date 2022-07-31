@@ -25,32 +25,35 @@ const ProcessFlowFourth = () => {
     }
 
     return (
-        <section className="section transition-all">
-            <div className="section-wrapper w-full flex justify-center items-center gap-10 lg:py-4">
-                <div className='w-full'>
-                <div className={`cursor-pointer bg-mainRed text-center py-8 px-4 lg:py-10 lg:px-8 xl:h-[500px] xl:w-[450px] lg:h-[450px] lg:w-[400px] h-[350px] w-[300px] relative border-8 border-white`}>
-                    <h4 className={`text-5xl uppercase mb-8 font-bold z-10 relative`}>Branding</h4>
-                    <div className={`absolute left-0 bottom-0  img-wrapper z-0`}>
-                        <Image src={MoonSurfaceRed} alt="HeroImg" className='w-full h-full' />
+        <section className="transition-all section">
+            <div className="flex items-center justify-center w-full gap-10 section-wrapper lg:py-4">
+                <div class="grid lg:grid-cols-2 gap-4">
+                    <div className='mx-auto lg:mx-0'>
+                        <div className='w-full'>
+                            <div className={`cursor-pointer bg-mainRed text-center py-8 px-4 lg:py-10 lg:px-8 xl:h-[500px] xl:w-[450px] lg:h-[450px] lg:w-[400px] h-[350px] w-[300px] relative border-8 border-white`}>
+                                <h4 className={`text-3xl md:text-4xl lg:text-5xl uppercase mb-8 font-bold z-10 relative`}>Branding</h4>
+                                <div className={`absolute left-0 bottom-0  img-wrapper z-0`}>
+                                    <Image src={MoonSurfaceRed} alt="HeroImg" className='w-full h-full' />
+                                </div>
+                                <div className={`w-56 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 img-wrapper z-0`}>
+                                    <Image src={SkatingAstraunot} alt="HeroImg" className='w-full h-full' id='heroImg' />
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className={`w-56 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 img-wrapper z-0`}>
-                        <Image src={SkatingAstraunot} alt="HeroImg" className='w-full h-full' id='heroImg' />
-                    </div>
-                </div>
-                </div>
-                <div className='w-full flex flex-col justify-center items-center h-full'>
-                    <div className='max-w-xl mx-auto'>
-                        <h1 className='heading'>{headingData}</h1>
-                        {/* <article className='flex justify-evenly items-center w-full h-full'> */}
-                        <p className='max-w-xl pb-5'>
-                            {articleData}
-                        </p>
-                        {/* </article> */}
-
-                        <div className='flex justify-center items-center gap-3 flex-wrap mt-auto'>
-                            <button onClick={() => BehaviouralMarketing()} className={'border-2 min-w-[10rem] border-white px-3 py-2 bg-mainRed text-white'}>Behavioural Marketing</button>
-                            <button onClick={() => IntentMarketing()} className={'border-2 min-w-[10rem] border-white px-3 py-2 bg-mainRed text-white'}>Intent Marketing</button>
-                            <button onClick={() => IntegratedMarketing()} className={'border-2 min-w-[10rem] border-white px-3 py-2 bg-mainRed text-white'}>Integrated Marketing</button>
+                    <div>
+                        <div className='flex flex-col items-center justify-center w-full h-full'>
+                            <div className='max-w-xl mx-auto'>
+                                <h1 className='heading'>{headingData}</h1>
+                                <p className='max-w-xl pb-5'>
+                                    {articleData}
+                                </p>
+                                <div className="grid grid-cols-2 md:grid-cols-3">
+                                    <button onClick={() => BehaviouralMarketing()} className={'border-2 m-1 border-white py-2 bg-mainRed text-white'}>Behavioural Marketing</button>
+                                    <button onClick={() => IntentMarketing()} className={'border-2 m-1 border-white py-2 bg-mainRed text-white'}>Intent Marketing</button>
+                                    <button onClick={() => IntegratedMarketing()} className={'border-2 m-1 border-white py-2 bg-mainRed text-white'}>Integrated Marketing</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

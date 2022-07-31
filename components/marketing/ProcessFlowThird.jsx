@@ -31,28 +31,34 @@ const ProcessFlowThird = () => {
     return (
         <section className="transition-all section">
             <div className="flex items-center justify-center w-full gap-10 section-wrapper lg:py-4">
-                <div className='w-full'>
-                <div className={`cursor-pointer bg-mainRed text-center py-8 px-4 lg:py-10 lg:px-8 xl:h-[500px] xl:w-[450px] lg:h-[450px] lg:w-[400px] h-[350px] w-[300px] relative border-8 border-white`} >
-                    <h4 className={`text-5xl uppercase mb-8 font-bold z-10 relative`}>Branding</h4>
-                    <div className={`absolute top-0 right-0 left-0 bottom-0 img-wrapper z-0`}>
-                        <Image src={Bulb} alt="HeroImg" className='w-full h-full' />
+                <div class="grid lg:grid-cols-2 gap-4">
+                    <div className='mx-auto lg:mx-0'>
+                        <div className='w-full'>
+                            <div className={`cursor-pointer bg-mainRed text-center py-8 px-4 lg:py-10 lg:px-8 xl:h-[500px] xl:w-[450px] lg:h-[450px] lg:w-[400px] h-[350px] w-[300px] relative border-8 border-white`} >
+                                <h4 className={`text-3xl md:text-4xl lg:text-5xl uppercase mb-8 font-bold z-10 relative`}>Branding</h4>
+                                <div className={`absolute top-0 right-0 left-0 bottom-0 img-wrapper z-0`}>
+                                    <Image src={Bulb} alt="HeroImg" className='w-full h-full' />
+                                </div>
+                                <div className={`w-28 h-40 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 img-wrapper z-0`}>
+                                    <Image src={FloatingAstraunotWhite} alt="HeroImg" className='w-full h-full' id='heroImg' />
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className={`w-28 h-40 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 img-wrapper z-0`}>
-                        <Image src={FloatingAstraunotWhite} alt="HeroImg" className='w-full h-full' id='heroImg' />
-                    </div>
-                </div>
-                </div>
-                <div className='flex flex-col items-center justify-center w-full h-full'>
-                    <div className='max-w-xl mx-auto'>
-                        <h1 className='heading'>{headingData}</h1>
-                        <p className='max-w-xl pb-5'>
-                            {articleData}
-                        </p>
-                        <div className="grid grid-cols-2 md:grid-cols-4">
-                            <button onClick={() => BrandStrategy()} className={'border-2 m-1 border-white py-2 bg-mainRed text-white'}>Brand Strategy</button>
-                            <button onClick={() => BrandIdentity()} className={'border-2 m-1 border-white py-2 bg-mainRed text-white'}>Brand Identity</button>
-                            <button onClick={() => BrandLaunch()} className={'border-2 m-1 border-white py-2 bg-mainRed text-white'}>Brand Launch</button>
-                            <button onClick={() => BrandBuilding()} className={'border-2 m-1 border-white py-2 bg-mainRed text-white'}>Brand Building</button>
+                    <div>
+                        <div className='flex flex-col items-center justify-center w-full h-full'>
+                            <div className='max-w-xl mx-auto'>
+                                <h1 className='heading'>{headingData}</h1>
+                                <p className='max-w-xl pb-5'>
+                                    {articleData}
+                                </p>
+                                <div className="grid grid-cols-2 md:grid-cols-4">
+                                    <button onClick={() => BrandStrategy()} className={'border-2 m-1 border-white py-2 bg-mainRed text-white'}>Brand Strategy</button>
+                                    <button onClick={() => BrandIdentity()} className={'border-2 m-1 border-white py-2 bg-mainRed text-white'}>Brand Identity</button>
+                                    <button onClick={() => BrandLaunch()} className={'border-2 m-1 border-white py-2 bg-mainRed text-white'}>Brand Launch</button>
+                                    <button onClick={() => BrandBuilding()} className={'border-2 m-1 border-white py-2 bg-mainRed text-white'}>Brand Building</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
