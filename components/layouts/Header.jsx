@@ -11,10 +11,10 @@ const Header = ({ setIsNavOpen }) => {
             <div className='flex items-center justify-between w-full max-w-7xl max-auto'>
                 <Link href='/'>
                     <a className='w-32'>
-                    <Image src={Logo} alt={'menu'} className='w-full h-full' />
+                        <Image src={Logo} alt={'menu'} className='w-full h-full' />
                     </a>
                 </Link>
-                <div className='w-10 h-12' onClick={() => setIsNavOpen(true)}>
+                <div className='w-10 h-12 cursor-pointer' onClick={() => setIsNavOpen(true)}>
                     <Image src={Menu} alt={'menu'} className='w-full h-full' />
                 </div>
             </div>
