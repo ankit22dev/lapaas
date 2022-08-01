@@ -25,45 +25,44 @@ const NavigationMenu = ({ isNavOpen, setIsNavOpen }) => {
 
 
     return (
-        <div className={`${isNavOpen ? "top-0" : "-top-full"} fixed text-white font-["Poppins"] h-100 left-0 h-screen w-screen bg-black z-[101] p-4 transform transition-all duration-1000`}>
-            {/* <div className='flex items-start justify-center h-full p-32 border-8 border-white'> */}
-            <div className='flex items-start justify-center h-full p-32 lg:border-8 lg:border-white'>
-                <div className="flex items-start justify-between h-full w-100 xl:w-full">
+        <div className={`${isNavOpen ? "top-0" : "-top-full"} fixed text-white font-["Poppins"] left-0 h-screen w-screen bg-black z-[101] p-4 transform transition-all duration-1000`}>
+            <div className='flex items-start justify-center h-full p-32 border-8 border-white'>
+                <div className="flex items-start justify-between w-full h-full">
                     <div className='flex w-full'>
-                        <div className='hidden w-32 xl:block'>
+                        <div className='w-32'>
                             <Image src={Logo} alt='Logo' className='w-full h-full' />
                         </div>
-                        <ul className='flex flex-col gap-8 xl:pl-4 xl:ml-4 xl:border-l-2 xl:border-white'>
+                        <ul className='flex flex-col gap-8 pl-4 ml-4 border-l-2 border-white'>
                             <li className=''>
                                 <span className='pb-1 ml-2 text-xl font-bold uppercase border-b-2 w-min'>Menu</span>
                             </li>
                             <li>
                                 <Link href="/" className=''>
-                                    <a className={`uppercase text-3xl md:text-4xl xl:text-5xl font-bold p-2 ${currentPage == '/' ? 'text-white' : "text-white/50"} hover:text-white`} onClick={() => setIsNavOpen(false)}>Home</a>
+                                    <a className={`uppercase text-5xl font-bold p-2 ${currentPage == '/' ? 'text-white' : "text-white/50"} hover:text-white`} onClick={() => setIsNavOpen(false)}>Home</a>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/marketing">
-                                    <a className={`uppercase text-3xl md:text-4xl xl:text-5xl font-bold p-2 ${currentPage == '/marketing' ? 'text-white' : "text-white/50"} hover:text-white`} onClick={() => setIsNavOpen(false)}>Marketing</a>
+                                    <a className={`uppercase text-5xl font-bold p-2 ${currentPage == '/marketing' ? 'text-white' : "text-white/50"} hover:text-white`} onClick={() => setIsNavOpen(false)}>Marketing</a>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/development">
-                                    <a className={`uppercase text-3xl md:text-4xl xl:text-5xl font-bold p-2 ${currentPage == '/development' ? 'text-white' : "text-white/50"} hover:text-white`} onClick={() => setIsNavOpen(false)}>Development</a>
+                                    <a className={`uppercase text-5xl font-bold p-2 ${currentPage == '/development' ? 'text-white' : "text-white/50"} hover:text-white`} onClick={() => setIsNavOpen(false)}>Development</a>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/consultance">
-                                    <a className={`uppercase text-3xl md:text-4xl xl:text-5xl font-bold p-2 ${currentPage == '/consultance' ? 'text-white' : "text-white/50"} hover:text-white`} onClick={() => setIsNavOpen(false)}>Consultance</a>
+                                    <a className={`uppercase text-5xl font-bold p-2 ${currentPage == '/consultance' ? 'text-white' : "text-white/50"} hover:text-white`} onClick={() => setIsNavOpen(false)}>Consultance</a>
                                 </Link>
                             </li>
                             <li>
-                                <a target="_blank" href="https://course.lapaas.com/" rel="noopener noreferrer" className={`uppercase text-3xl md:text-4xl xl:text-5xl font-bold p-2 ${currentPage == '/course' ? 'text-white' : "text-white/50"} hover:text-white`}>Course</a>
+                                <a target="_blank" href="https://course.lapaas.com/" rel="noopener noreferrer" className={`uppercase text-5xl font-bold p-2 ${currentPage == '/course' ? 'text-white' : "text-white/50"} hover:text-white`}>Course</a>
                             </li>
                         </ul>
                     </div>
                     <div className='flex justify-end w-full max-w-xl'>
-                        <div className='flex flex-col hidden gap-8 pr-4 mr-4 border-r-2 border-white xl:block'>
+                        <div className='flex flex-col gap-8 pr-4 mr-4 border-r-2 border-white'>
                             <ul className='flex flex-col items-end justify-center gap-2 capitalize'>
                                 {/* , ,  */}
                                 <li>Lapaasindia@Gmail.Com</li>
