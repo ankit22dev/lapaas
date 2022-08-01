@@ -26,7 +26,8 @@ const NavigationMenu = ({ isNavOpen, setIsNavOpen }) => {
 
     return (
         <div className={`${isNavOpen ? "top-0" : "-top-full"} fixed text-white font-["Poppins"] left-0 h-screen w-screen bg-black z-[101] p-4 transform transition-all duration-1000`}>
-            <div className='border-8 border-white flex justify-center items-start h-full p-32'>
+            {/* <div className='border-8 border-white flex justify-center items-start h-full p-32'> */}
+            <div className='lg:border-8 lg:border-white flex justify-center items-start h-full p-32'>
                 <div className="h-full w-100 xl:w-full flex justify-between items-start">
                     <div className='w-full flex'>
                         <div className='w-32 xl:block hidden'>
