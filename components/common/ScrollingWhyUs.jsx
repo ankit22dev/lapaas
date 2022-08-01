@@ -19,17 +19,25 @@ const ScrollingWhyUs = ({ isHome = false }) => {
                 <div className='w-full overflow-y-auto lg:w-1/2 scrolling-whyUs'>
                     <div className='flex items-center justify-center h-screen'>
                         <div className='max-w-lg px-4 text-center'>
-                            <h1 className='heading'>Proven Strategies</h1>
+                            <h1 className='heading'>We work like our business</h1>
                             <p className='text-lg font-medium trackind-wide md:font-semibold '>
-                                We use advanced and proven strategies to bring results in a cost effective manner.
+                                We provide our services as it is our business. We offer an array of packages to suit all needs.
                             </p>
                         </div>
                     </div>
                     <div className='flex items-center justify-center h-screen'>
                         <div className='max-w-lg px-4 text-center'>
-                            <h1 className='heading'>11+ Years of Experience</h1>
+                            <h1 className='heading'>Affordable</h1>
                             <p className='text-lg font-medium trackind-wide md:font-semibold '>
-                                We have 11+ years of experience so we know what works or what doesn't work.
+                                Our clients love us because we provide affordable services without losing the quality.
+                            </p>
+                        </div>
+                    </div>
+                    <div className='flex items-center justify-center h-screen'>
+                        <div className='max-w-lg px-4 text-center'>
+                            <h1 className='heading'>Get Most Out of Your Budget </h1>
+                            <p className='text-lg font-medium trackind-wide md:font-semibold '>
+                                Our team of experts work very hard for your business, so you can get maximum results from your resources.
                             </p>
                         </div>
                     </div>
