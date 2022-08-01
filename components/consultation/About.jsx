@@ -5,7 +5,7 @@ const About = () => {
     return (
         <section className='section'>
             {/* <div className="section-wrapper md:w-full flex justify-center lg:justify-between items-center"> */}
-            <div className="section-wrapper md:w-full flex justify-center justify-between items-center">
+            <div className="section-wrapper md:w-full flex justify-between items-center">
                 <div className='w-96 relative hidden lg:block' id='flyingAstroImg'>
                     <Image src={FloatingAstraunotBlack} alt="HeroImg" className='w-full h-full' />
                 </div>
