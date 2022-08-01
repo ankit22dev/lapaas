@@ -25,7 +25,7 @@ const NavigationMenu = ({ isNavOpen, setIsNavOpen }) => {
 
 
     return (
-<div className={`${isNavOpen ? "top-0" : "-top-full"} fixed text-white font-["Poppins"] h-100 left-0 h-screen w-screen bg-black ${setIsNavOpen ? "z-[10]" : "md:z-[101]"} p-4 transform transition-all duration-1000`}>
+<div className={`${isNavOpen ? "top-0" : "-top-full"} fixed text-white font-["Poppins"] h-100 left-0 h-screen w-screen bg-transparent ${setIsNavOpen ? "z-[10]" : "md:z-[101]"} p-4 transform transition-all duration-1000`}>
             {/* <div className='flex items-start justify-center h-full p-32 border-8 border-white'> */}
             <div className='flex items-start justify-center h-full p-32 lg:border-8 lg:border-white'>
                 <div className="flex items-start justify-between h-full w-100 xl:w-full">
