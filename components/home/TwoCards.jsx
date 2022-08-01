@@ -16,7 +16,7 @@ const TwoCards = () => {
                     imgName={astraunotincup}
                     // imgClassName={'absolute top-0 right-0 left-0 bottom-0 img-wrapper'}
                     imgClassName={'lg:w-80 w-40 relative mx-auto'}
-                    className='border-8 cursor-pointer border-white bg-mainRed text-center py-8 px-4 lg:py-10 lg:px-8 xl:h-[500px] xl:w-[450px] lg:h-[450px] lg:w-[400px] h-[350px] w-[300px]'
+                    className='border-8 cursor-pointer border-white bg-mainRed text-center py-8 px-4 lg:py-10 lg:px-8 xl:h-[500px] xl:w-[450px] lg:h-[450px] lg:w-[400px] md:h-[350px] md:w-[300px]  h-[280px] w-[270px]'
                     onClick={() => {
                         Router.push('/marketing')
                     }}
@@ -26,7 +26,7 @@ const TwoCards = () => {
                     titleClassName='text-3xl md:text-4xl lg:text-5xl uppercase mb-8 font-bold'
                     imgName={AstraunotDrinkingCofee}
                     imgClassName={'lg:w-72 w-32 relative mx-auto'}
-                    className='border-8 cursor-pointer border-white bg-mainRed text-center py-8 px-4 lg:py-10 lg:px-8 xl:h-[500px] xl:w-[450px] lg:h-[450px] lg:w-[400px] h-[350px] w-[300px]'
+                    className='border-8 cursor-pointer border-white bg-mainRed text-center py-8 px-4 lg:py-10 lg:px-8 xl:h-[500px] xl:w-[450px] lg:h-[450px] lg:w-[400px] md:h-[350px] md:w-[300px]  h-[280px] w-[270px]'
                     onClick={() => {
                         Router.push('/development')
                     }}

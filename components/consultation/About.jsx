@@ -6,7 +6,7 @@ const About = () => {
         <section className='section'>
             <div className="flex items-center justify-center my-auto section-wrapper md:w-full lg:justify-between">
             {/* <div className="flex items-center justify-center justify-between section-wrapper md:w-full"> */}
-                <div className='relative hidden w-96 lg:block' id='flyingAstroImg'>
+                <div className='relative hidden w-1/3 lg:block' id='flyingAstroImg'>
                     <Image src={FloatingAstraunotBlack} alt="HeroImg" className='w-full h-full' />
                 </div>
                 <div className='flex flex-col items-center justify-center max-w-lg'>

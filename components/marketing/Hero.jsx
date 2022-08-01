@@ -46,7 +46,7 @@ const Hero = ({ comp }) => {
                 <div
                     className={`${slide ? "w-full" : "lg:w-2/5"} relative origin-right overflow-hidden transition-all duration-1000 flex py-12 flex-col justify-center items-center `}
                 >
-                    <div className='relative hidden lg:w-1/2 lg:block' id='heroImg'>
+                    <div className='relative hidden lg:6/12 lg:block' id='heroImg'>
                         <Image src={astraunotincup} alt="HeroImg" className='w-full h-full' />
                     </div>
                     <button type='button' className={`red-btn transition-all mt-auto duration-1000 ${slide ? 'opacity-100 visible' : 'opacity-0 hidden'}`} onClick={() => {
