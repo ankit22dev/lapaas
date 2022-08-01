@@ -4,9 +4,9 @@ import ChartBox from '../common/ChartBox'
 const D2C = () => {
     return (
         <section className='section'>
-            <div className="section-wrapper flex flex-col justify-center items-center gap-8">
+            <div className="flex flex-col items-center justify-center gap-8 section-wrapper">
                 <h1 className='heading'>D2C</h1>
-                <div className='flex justify-between items-center gap-16'>
+                <div className='flex items-center justify-between gap-16'>
                     <ChartBox
                         data={[
                             {
@@ -38,12 +38,11 @@ const D2C = () => {
                     {/* <div className='w-[40vw] relative bottom-0 hidden lg:block'>
                 <Image src={WhyNotAstraunotBlue} alt="HeroImg" className='w-full h-full' />
             </div> */}
-                    <div className='max-w-lg flex justify-center items-center lg:items-start flex-col'>
-                        <p className='trackind-wide font-medium md:font-semibold text-2xl text-center lg:text-left'>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam provident consectetur ab accusamus nesciunt at
-                            neque architecto quo quaerat earum quibusdam nisi, culpa, molestiae modi eos aliquam! Tempora ratione neque accusamus
-                            ipsam magni ab perspiciatis ad id perferendis distinctio, consequuntur deleniti.
-                            Corrupti fugiat voluptates minima perferendis, perspiciatis reprehenderit natus dolorum.
+                    <div className='flex flex-col items-center justify-center max-w-lg lg:items-start'>
+                        <p className='text-2xl font-medium text-center trackind-wide md:font-semibold lg:text-left'>
+                            We have helped more than 42 brands to get more customers through our Proven
+                            Marketing Strategies. We have helped them to reduce their customer acquisition cost by
+                            42% and increased their average order value by 136% to increase their profitability by 37%.
                         </p>
                     </div>
                 </div>

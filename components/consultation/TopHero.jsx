@@ -31,10 +31,12 @@ const TopHero = ({ comp }) => {
                     <div className="flex flex-col max-w-xl py-12 mx-auto">
                         <div className="items-center justify-center">
                             <h1 className="heading">
-                                <div className="text-left">TRANSFORM YOUR BUSINESS WITH BUSINESS CONSULTING SERVICES</div>
+                                <div className="text-left">TRANSFORM YOUR BUSINESS WITH BUSINESS CONSULTING</div>
                             </h1>
                             <p className='space-y-2 text-base tracking-wider text-left md:text-lg'>
-                                If you’re ready to take the next step toward success then it’s time to get Business consulting services! Whether it be launching a new product or simply getting more leads and sales, Entrepreneur Sahil Khanna has the expertise necessary to make it happen.
+                                If you’re ready to take the next step toward success then it’s time to get Business
+                                consulting services! Whether it be launching a new product or simply getting more leads
+                                and sales, Entrepreneur Sahil Khanna has the expertise necessary to make it happen.
                             </p>
                         </div>
                         <div className="mt-6">

@@ -31,11 +31,12 @@ const Hero = ({ comp }) => {
                     <div className="flex flex-col max-w-xl py-12 mx-auto pt-0.5">
                         <div className="items-center justify-center">
                             <h1 className="heading">
-                                <div className="text-left">We&apos;ll help you get the most out of your marketing budget</div>
+                                <div className="text-left">Get the most out of your marketing budget</div>
                             </h1>
                             <p className='space-y-2 text-base tracking-wider text-left md:text-lg'>
-                                We are Lapaas, a marketing agency that is 100% invested in your success. We believe that when our clients succeed, we succeed.. 
-                                From start to finish, we will be there with you every step of the way to ensure that you reach your goals. We want to see you succeed and we will do everything in our power to help you get there.
+                                We are Lapaas, a marketing agency that is 100% invested in your success. We believe that
+                                when our clients succeed, we succeed. We want to see you succeed and we will do
+                                everything in our power to help you get there.
                             </p>
                         </div>
                         <div className="mt-6">

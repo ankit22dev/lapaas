@@ -17,7 +17,7 @@ const ScrollingWhyUs = () => {
                     <div className='flex items-center justify-center h-screen'>
                         <div className='max-w-lg px-4 text-center'>
                             <h1 className='heading'>Experienced Developers</h1>
-                            <p className='text-lg font-medium trackind-wide md:font-semibold '>We have experienced developers who always fulfills all you needs in efficient manner.</p>
+                            <p className='text-lg font-medium trackind-wide md:font-semibold '>We have experienced developers who always fulfil all your needs in an efficient manner.</p>
                         </div>
                     </div>
                     <div className='flex items-center justify-center h-screen'>
@@ -29,7 +29,7 @@ const ScrollingWhyUs = () => {
                     <div className='flex items-center justify-center h-screen'>
                         <div className='max-w-lg px-4 text-center'>
                             <h1 className='heading'>Affordable</h1>
-                            <p className='text-lg font-medium trackind-wide md:font-semibold '>Our clients love us because we provide affordable digital marketing services without loosing the quality.</p>
+                            <p className='text-lg font-medium trackind-wide md:font-semibold '>Our clients love us because we provide affordable digital marketing services without losing the quality.</p>
                         </div>
                     </div>
                 </div>

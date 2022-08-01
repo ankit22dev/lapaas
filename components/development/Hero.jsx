@@ -13,6 +13,7 @@ const Hero = ({ comp }) => {
 
     return (
         <section className="section active">
+            
             <div className='relative flex h-full px-6 py-8'>
                 <div
                     className={`${slide ? "w-full" : "w-0"
@@ -33,7 +34,7 @@ const Hero = ({ comp }) => {
                             <h1 className="heading">
                                 <div className="text-left">Make your idea a reality</div></h1>
                             <p className='space-y-2 text-base tracking-wider text-left md:text-lg'>
-                                Lapaas is a product development company that helps startups and businesses take their products from idea to market. We have a team of experienced engineers, designers, and marketers who can help you with everything from product design to marketing strategy. We offer a range of services including product design, MVP, website development and app development.
+                            Lapaas is a product development company that helps startups and businesses take their products from idea to market. We offer a range of services including product design, MVP, website development and app development.
                             </p>
                         </div>
                         <div className="mt-6">

@@ -10,22 +10,22 @@ const ProcessFlowThird = () => {
     const [articleData, setArticleData] = useState("We help you take your product from concept to reality. We specialise in rapid prototyping, which allows us to create a prototype in a fraction of the time it would take using traditional methods. This means you can test your product’s feasibility and get feedback from potential customers faster than ever before. We want to help you bring your product to market as quickly and efficiently as possible. ")
 
     function Prototyping() {
-        setHeadingData("Conceptualization Your Idea ")
-        setArticleData("We help you take your product from concept to reality. We specialise in rapid prototyping, which allows us to create a prototype in a fraction of the time it would take using traditional methods. This means you can test your product’s feasibility and get feedback from potential customers faster than ever before. We want to help you bring your product to market as quickly and efficiently as possible. ")
+        setHeadingData("Conceptualization Your Idea")
+        setArticleData("We help you take your product from concept to reality. This means you can test your product’s feasibility and get feedback from potential customers faster than ever before. We want to help you bring your product to market as quickly and efficiently as possible.")
     }
 
     function MVP() {
-        setHeadingData("Validate Your Idea ")
-        setArticleData("We can help you develop your idea into a Minimum Viable Product (MVP). This is the simplest, most essential version of your product that will allow you to test your assumptions and get feedback from customers. Once you have an MVP, we can help you validate your idea by getting feedback from potential customers. ")
+        setHeadingData("Validate Your Startup Idea")
+        setArticleData("We can help you develop your idea into a Minimum Viable Product (MVP). This is the simplest, most essential version of your product that will allow you to test your assumptions and get feedback from customers.")
     }
 
     function WebsiteDevelopment() {
-        setHeadingData("GET SEO FRIENDLY WEBSITE FOR YOUR BUSINESS")
+        setHeadingData("Professional website at affordable prices")
         setArticleData("Lapaas is a leading website development company that provides affordable web design services. Our design services not only help you stand out from the crowd but also help you to get more sales and leads.")
     }
 
     function AppDevelopment() {
-        setHeadingData("BEST MOBILE APP DEVELOPMENT COMPANY")
+        setHeadingData("We turn ideas into apps")
         setArticleData("Our top-notch developers focus on your specifications and requirements to ensure that we create an app that is tailored to your needs. With our expertise, we can help you develop a high quality product within budget and in time.")
     }
 

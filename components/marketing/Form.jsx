@@ -8,11 +8,12 @@ const Form = () => {
     const [CompanyBio, setCompanyBio] = useState("")
     const [NameUser, setNameUser] = useState("")
     const [PhoneNumber, setPhoneNumber] = useState("")
+    const [Designation, setDesignation] = useState("")
     const [EmailUser, setEmailUser] = useState("")
 
     async function submitConsultaionForm(e) {
         e.preventDefault()
-        let data = { PriceRange, CompanyBio, NameUser, PhoneNumber, EmailUser }
+        let data = { PriceRange, CompanyBio, NameUser, Designation, PhoneNumber, EmailUser }
         let result = await fetch(`/api/marketingFormDataAPI`, {
             method: "POST",
             body: JSON.stringify(data),
@@ -28,6 +29,7 @@ const Form = () => {
             setCompanyBio("")
             setNameUser("")
             setPhoneNumber("")
+            setDesignation("")
             setEmailUser("")
             seFormnumber(1)
         } else {
@@ -37,10 +39,10 @@ const Form = () => {
 
     return (
         <section className='section'>
-            <form className='max-w-4xl w-full mx-auto flex flex-col' onSubmit={(e) => { e.preventDefault() }}>
+            <form className='flex flex-col w-full max-w-4xl mx-auto' onSubmit={(e) => { e.preventDefault() }}>
                 {formnumber !== 1 ? (
-                    <div className='flex flex-col w-10/12 select-none justify-start'>
-                        <div className='flex justify-between items-center w-full gap-4 mb-8'>
+                    <div className='flex flex-col justify-start w-10/12 select-none'>
+                        <div className='flex items-center justify-between w-full gap-4 mb-8'>
                             <div className='w-full'>
                                 <label class="lg:font-bold cursor-pointer text-xl" for="NameUser">
                                     Name
@@ -57,10 +59,14 @@ const Form = () => {
                         <label class="lg:font-bold cursor-pointer text-xl mb-3" for="EmailUser">
                             Email
                         </label>
-                        <input value={EmailUser} onChange={(e) => setEmailUser(e.target.value)} autoComplete="off" class="shadow appearance-none border rounded w-100 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="EmailUser" type="email"></input>
+                        <input value={EmailUser} onChange={(e) => setEmailUser(e.target.value)} autoComplete="off" class="shadow appearance-none border rounded w-100 mb-5 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="EmailUser" type="email"></input>
+                        <label class="lg:font-bold cursor-pointer text-xl mb-3" for="Designation">
+                            Designation
+                        </label>
+                        <input value={Designation} onChange={(e) => setDesignation(e.target.value)} autoComplete="off" class="shadow appearance-none border rounded w-100 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="Designation" type="email"></input>
                         <button
                             type='submit'
-                            className='bg-liteYellow text-xl uppercase rounded-full ml-auto py-2 px-6 font-bold text-black mt-8'
+                            className='px-6 py-2 mt-8 ml-auto text-xl font-bold text-black uppercase rounded-full bg-liteYellow'
                             onClick={(e) => {
                                 submitConsultaionForm(e)
                             }}
@@ -70,20 +76,20 @@ const Form = () => {
                     </div>
                 ) : (
                     <>
-                        <div className='flex flex-col select-none justify-center'>
+                        <div className='flex flex-col justify-center select-none'>
                             <h3 className='form-question'>What is your objective?</h3>
                             <label class="lg:font-bold cursor-pointer text-xl mb-3" for="CompanyBio">
                                 Company Bio
                             </label>
                             <input value={CompanyBio} onChange={(e) => setCompanyBio(e.target.value)} autoComplete="off" class="mb-8 shadow appearance-none border rounded w-100 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="CompanyBio" type="text" placeholder="Company Bio"></input>
                             <div>
-                                <h3 className='form-question'>How much is your budget?</h3>
+                                <h3 className='form-question'>What is your monthly marketing budget</h3>
                                 <input type="range" name="budget" id="budget" className='w-full' min="30000" max="500000" step="50000" value={PriceRange} onChange={(e) => setPriceRange(e.target.value)} />
                             </div>
                         </div>
                         <button
                             type='submit'
-                            className='bg-liteYellow text-xl uppercase rounded-full ml-auto py-2 px-6 font-bold text-black mt-8'
+                            className='px-6 py-2 mt-8 ml-auto text-xl font-bold text-black uppercase rounded-full bg-liteYellow'
                             onClick={(e) => {
                                 e.preventDefault();
                                 seFormnumber(2)

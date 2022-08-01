@@ -13,6 +13,7 @@ const Hero = ({ comp }) => {
 
     return (
         <section className="section active">
+            
             <div className='relative flex h-full px-6 py-8'>
                 <div
                     className={`${slide ? "w-full" : "w-0"
@@ -34,8 +35,9 @@ const Hero = ({ comp }) => {
                                 <div className="text-left">Transform Your Business with Lapaas</div>
                             </h1>
                             <p className='space-y-2 text-base tracking-wider text-left md:text-lg'>
-                                We pride ourselves on being able to provide high quality work at affordable prices without sacrificing any quality.
-                                If you want a digital marketing agency that truly cares about your success then look no further than Lapaas!
+                                We pride ourselves on being able to provide high quality work at affordable prices without
+                                sacrificing any quality. If you want a digital marketing agency that truly cares about your
+                                success then look no further than Lapaas!
                             </p>
                         </div>
                         <div className="flex gap-6 mt-6">

@@ -35,10 +35,10 @@ const Form = () => {
 
     return (
         <section className='section'>
-            <form className='max-w-4xl w-full mx-auto flex flex-col' onSubmit={(e) => { e.preventDefault() }}>
+            <form className='flex flex-col w-full max-w-4xl mx-auto' onSubmit={(e) => { e.preventDefault() }}>
                 {formnumber !== 1 ? (
-                    <div className='flex flex-col w-10/12 select-none justify-start'>
-                        <div className='flex justify-between items-center w-full gap-4 mb-8'>
+                    <div className='flex flex-col justify-start w-10/12 select-none'>
+                        <div className='flex items-center justify-between w-full gap-4 mb-8'>
                             <div className='w-full'>
                                 <label class="lg:font-bold cursor-pointer text-xl" for="NameUser">
                                     Name
@@ -58,7 +58,7 @@ const Form = () => {
                         <input value={EmailUser} onChange={(e) => setEmailUser(e.target.value)} autoComplete="off" class="shadow appearance-none border rounded w-100 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="EmailUser" type="email"></input>
                         <button
                             type='submit'
-                            className='bg-liteYellow text-xl uppercase rounded-full ml-auto py-2 px-6 font-bold text-black mt-8'
+                            className='px-6 py-2 mt-8 ml-auto text-xl font-bold text-black uppercase rounded-full bg-liteYellow'
                             onClick={(e) => {
                                 submitConsultaionForm(e)
                             }}
@@ -68,17 +68,17 @@ const Form = () => {
                     </div>
                 ) : (
                     <>
-                        <div className='flex flex-col select-none justify-center'>
+                        <div className='flex flex-col justify-center select-none'>
                             <div className='mb-8'>
                                 <h3 className='heading'>What do you want to develop?</h3><div>
-                                    <h3 className='form-question'>How much is your budget?</h3>
+                                    <h3 className='form-question'>What is your total budget for this project?</h3>
                                     <input type="range" name="budget" id="budget" className='w-full' min="20000" max="1000000" step="50000" value={PriceRange} onChange={(e) => setPriceRange(e.target.value)} />
                                 </div>
                             </div>
                         </div>
                         <button
                             type='submit'
-                            className='bg-liteYellow text-xl uppercase rounded-full ml-auto py-2 px-6 font-bold text-black mt-8'
+                            className='px-6 py-2 mt-8 ml-auto text-xl font-bold text-black uppercase rounded-full bg-liteYellow'
                             onClick={(e) => {
                                 e.preventDefault();
                                 seFormnumber(2)

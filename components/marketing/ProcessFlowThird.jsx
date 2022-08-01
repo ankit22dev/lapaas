@@ -5,27 +5,27 @@ import FloatingAstraunotWhite from '../../public/imgs/floatingAstraunotWhite.png
 
 const ProcessFlowThird = () => {
 
-    const [headingData, setHeadingData] = useState("BUILD A POWERFUL IMAGE WITH OUR BRANDING SERVICES")
-    const [articleData, setArticleData] = useState("We know how important it is for your business to have an identity that’s unique and consistent, so we work with you every step of the way. Our branding services are designed to help you build a strong foundation for your company – one that can grow as big as you dream.")
+    const [headingData, setHeadingData] = useState("BUILD A POWERFUL IMAGE")
+    const [articleData, setArticleData] = useState("We know how important it is for your business to have an identity that’s unique and consistent, so we work with you every step of the way. Our branding services are designed to help you build a strong foundation for your company.")
 
     function BrandStrategy() {
-        setHeadingData("You may have a business but doesn't mean you have a brand")
-        setArticleData("A lot of businesses focus on their products and services but forget the importance of branding. At Lapaas, we understand the value of branding and how it can help take your business to the next level. We offer research and thinking services to help you create a powerful and unique brand that will differentiate you from your competitors.")
+        setHeadingData("Business doesn't mean you have a brand")
+        setArticleData("A lot of businesses focus on their products and services but forget the importance of branding. We offer research and thinking services to help you create a powerful and unique brand that will differentiate you from your competitors.")
     }
 
     function BrandIdentity() {
-        setHeadingData("Build brand identity that will help you stand out from the competition")
-        setArticleData("Do you need help creating a strong and unique brand identity that will help you stand out from the competition? If so, Lapaas can help. We are experts in brand development and we can create a brand identity for you that will perfectly represent your company and its values.We believe that a well-defined brand is essential for success in today’s competitive marketplace.")
+        setHeadingData("Stand out from the competition")
+        setArticleData("We are experts in brand development and we can create a brand identity for you that will perfectly represent your company and its values. We believe that a well-defined brand is essential for success in today’s competitive marketplace.")
     }
 
     function BrandLaunch() {
-        setHeadingData("Launch Your Dream Brand Easily ")
-        setArticleData("Lapaas is a full-service branding and marketing agency that helps entrepreneurs launch their businesses. We understand that starting a business can be daunting, which is why we offer a variety of services to help you every step of the way. We want to make the process as easy as possible so that you can focus on what's important - building your brand.")
+        setHeadingData("Launch Your Dream Brand Easily")
+        setArticleData("Lapaas is a full-service branding and marketing agency that helps entrepreneurs launch their businesses. We understand that starting a business can be daunting, which is why we offer a variety of services to help you every step of the way")
     }
 
     function BrandBuilding() {
-        setHeadingData("Take Your Business to New Heights ")
-        setArticleData("A strong brand is key to success in any industry. At Lapaas, we understand the importance of branding and how it can help your company reach new heights. Our branding services are designed to help you build a foundation for your company that will stand the test of time. We want to help you create a brand that is authentic to you and your company.")
+        setHeadingData("Take Your Business to New Heights")
+        setArticleData("A strong brand is key to success in any industry. At Lapaas, we understand the importance of branding and how it can help your company reach new heights. We want to help you create a brand that is authentic to you and your company.")
     }
 
     return (

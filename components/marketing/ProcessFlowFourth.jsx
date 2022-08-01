@@ -6,22 +6,22 @@ import SkatingAstraunot from '../../public/imgs/skatingAstraunot.png'
 
 
 const ProcessFlowFourth = () => {
-    const [headingData, setHeadingData] = useState("BOOST YOUR ROI WITH PERFORMANCE MARKETING")
-    const [articleData, setArticleData] = useState("We have a proven track record of success in the performance marketing space. Our team has been working with clients for over 10 years and we have seen it all! Let us help you drive more traffic, increase conversions, lower costs and provide real results")
+    const [headingData, setHeadingData] = useState("Get More Sales Easily")
+    const [articleData, setArticleData] = useState("We have a proven track record of success in the performance marketing space. Our team has been working with clients for over 10 years and we have seen it all! Let us help you drive more traffic, lower costs and provide real results.")
 
     function BehaviouralMarketing() {
-        setHeadingData("Behavioural Marketing- Engage with your customers in Most Effective Way ")
-        setArticleData("Behavioral Marketing  is one of the most cost-effective ways to reach customers at a scalable level. It’s surprisingly cheaper than other marketing strategies in the long term, because you can reach a huge customer base at once for a relatively low cost.. Lapaas helps businesses like yours get more website traffic and increase sales by leveraging our expertise in Behavioural Marketing.")
+        setHeadingData("Engage with your customers in Most Effective Way")
+        setArticleData("Behavioural Marketing is one of the most cost-effective ways to reach customers at a scalable level. It’s surprisingly cheaper than other marketing strategies in the long term, because you can reach a huge customer base at once for a relatively low cost.")
     }
 
     function IntentMarketing() {
-        setHeadingData("Intent Marketing- Convert Right Customer Into Sales ")
-        setArticleData("Intent Marketing with an experienced firm like ours is an excellent way to reach new customers interested in your products and help turn browsers into buyers. Our team of experts helps to effective campaigns that convert the right customers into leads and sales.You can trust our expertise when it comes to making sure that your campaign is maximising its potential at every stage of the process")
+        setHeadingData("Convert Right Customer Into Sales")
+        setArticleData("Intent Marketing with an experienced firm like ours is an excellent way to reach new customers interested in your products. You can trust our expertise when it comes to making sure that your campaign is maximising its potential.")
     }
 
     function IntegratedMarketing() {
-        setHeadingData("Integrated Marketing- Get Most out of your marketing efforts ")
-        setArticleData("You deserve an experienced team who can make sense of your marketing campaign and help you get the most out of your advertising spend.  Let us help you! We are experts in integrated marketing and we will manage your campaigns so that they work for YOU, not against you. Our team has been working with clients for over 10 years and we have seen it all!")
+        setHeadingData("Get Most out of your marketing efforts")
+        setArticleData("You deserve an experienced team who can make sense of your marketing campaign and help you get the most out of your advertising spend. We will manage your campaigns so that they work for YOU, not against you.")
     }
 
     return (

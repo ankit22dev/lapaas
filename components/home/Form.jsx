@@ -4,124 +4,102 @@ import React, { useState } from 'react'
 const Form = () => {
 
     const [formnumber, seFormnumber] = useState(1)
+    const [PriceRange, setPriceRange] = useState("")
+    const [CompanyBio, setCompanyBio] = useState("")
+    const [NameUser, setNameUser] = useState("")
+    const [PhoneNumber, setPhoneNumber] = useState("")
+    const [Designation, setDesignation] = useState("")
+    const [EmailUser, setEmailUser] = useState("")
+
+    async function submitConsultaionForm(e) {
+        e.preventDefault()
+        let data = { PriceRange, CompanyBio, NameUser, Designation, PhoneNumber, EmailUser }
+        let result = await fetch(`/api/marketingFormDataAPI`, {
+            method: "POST",
+            body: JSON.stringify(data),
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            }
+        })
+        result = await result.json()
+        if (result.info === "successfully") {
+            alert("Your data is saved to server side in json file")
+            setPriceRange("")
+            setCompanyBio("")
+            setNameUser("")
+            setPhoneNumber("")
+            setDesignation("")
+            setEmailUser("")
+            seFormnumber(1)
+        } else {
+            alert("Something Went wrong")
+        }
+    }
 
     return (
         <section className='section'>
-                <form className='max-w-4xl w-full mx-auto flex justify-start items-start flex-col' onSubmit={(e) => { e.preventDefault()}}>
-                    {formnumber !== 1 ? (
-                        <div className='flex flex-col gap-8 w-10/12 select-none'>
-                            <div>
-                                <h3 className='form-question'>What is your objective of consultation ?</h3>
-                                <div className='flex flex-col lg:flex-row lg:gap-8'>
-                                    <div className='flex gap-2 justify-start items-baseline'>
-                                        <input className='cursor-pointer' type="checkbox" name="youHave" id="ideaValidation" value='ideaValidation' />
-                                        <label htmlFor="ideaValidation" className='lg:font-bold cursor-pointer text-xl'>Idea Validation</label>
-                                    </div>
-                                    <div className='flex gap-2 justify-start items-baseline'>
-                                        <input className='cursor-pointer' type="checkbox" name="youHave" id="businessGrowth" value='businessGrowth' />
-                                        <label htmlFor="businessGrowth" className='lg:font-bold cursor-pointer text-xl'>Business Growth</label>
-                                    </div>
-                                    <div className='flex gap-2 justify-start items-baseline'>
-                                        <input className='cursor-pointer' type="checkbox" name="youHave" id="marketing" value='marketing' />
-                                        <label htmlFor="marketing" className='lg:font-bold cursor-pointer text-xl'>Marketing</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <h3 className='form-question'>Company Brief</h3>
-                                <div className='flex flex-col lg:flex-row lg:gap-8'>
-                                    <div className='flex gap-2 justify-start items-baseline'>
-                                        <input className='cursor-pointer' type="checkbox" name="marketingGoal" id="branding" value='branding' />
-                                        <label htmlFor="branding" className='lg:font-bold cursor-pointer text-xl'>Branding</label>
-                                    </div>
-                                    <div className='flex gap-2 justify-start items-baseline'>
-                                        <input className='cursor-pointer' type="checkbox" name="marketingGoal" id="sales" value='sales' />
-                                        <label htmlFor="sales" className='lg:font-bold cursor-pointer text-xl'>Sales</label>
-                                    </div>
-                                    <div className='flex gap-2 justify-start items-baseline'>
-                                        <input className='cursor-pointer' type="checkbox" name="marketingGoal" id="digitalTransformation" value='digitalTransformation' />
-                                        <label htmlFor="digitalTransformation" className='lg:font-bold cursor-pointer text-xl'>Digital Transformation</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='flex justify-between items-center w-full gap-4'>
-                                <div className='w-full'>
-                                    <h3 className='form-question'>Name</h3>
-                                    <input type="text" className='input-field'/>
-                                </div>
-                                <div className='w-full'>
-                                    <h3 className='form-question'>Phone Number</h3>
-                                    <input type="number" className='input-field' />
-                                </div>
-                            </div>
-                            <div>
+            <form className='flex flex-col w-full max-w-4xl mx-auto' onSubmit={(e) => { e.preventDefault() }}>
+                {formnumber !== 1 ? (
+                    <div className='flex flex-col justify-start w-10/12 select-none'>
+                        <div className='flex items-center justify-between w-full gap-4 mb-8'>
                             <div className='w-full'>
-                                    <h3 className='form-question'>Email</h3>
-                                    <input type="email" className='input-field' />
-                                </div>
+                                <label class="lg:font-bold cursor-pointer text-xl" for="NameUser">
+                                    Name
+                                </label>
+                                <input value={NameUser} onChange={(e) => setNameUser(e.target.value)} autoComplete="off" class="input-field mt-3 shadow appearance-none border rounded w-100 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="NameUser" type="text" placeholder='Username'></input>
+                            </div>
+                            <div className='w-full'>
+                                <label class="lg:font-bold cursor-pointer text-xl" for="PhoneNumber">
+                                    Phone Number
+                                </label>
+                                <input value={PhoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} autoComplete="off" class="input-field mt-3 shadow appearance-none border rounded w-100 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="PhoneNumber" type="text" maxLength="10" placeholder='9876543210'></input>
                             </div>
                         </div>
-                    ) : (
-                        <div className='flex flex-col gap-8 select-none'>
+                        <label class="lg:font-bold cursor-pointer text-xl mb-3" for="EmailUser">
+                            Email
+                        </label>
+                        <input value={EmailUser} onChange={(e) => setEmailUser(e.target.value)} autoComplete="off" class="shadow appearance-none border rounded w-100 mb-5 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="EmailUser" type="email"></input>
+                        <label class="lg:font-bold cursor-pointer text-xl mb-3" for="Designation">
+                            Designation
+                        </label>
+                        <input value={Designation} onChange={(e) => setDesignation(e.target.value)} autoComplete="off" class="shadow appearance-none border rounded w-100 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="Designation" type="email"></input>
+                        <button
+                            type='submit'
+                            className='px-6 py-2 mt-8 ml-auto text-xl font-bold text-black uppercase rounded-full bg-liteYellow'
+                            onClick={(e) => {
+                                submitConsultaionForm(e)
+                            }}
+                        >
+                            astronaut
+                        </button>
+                    </div>
+                ) : (
+                    <>
+                        <div className='flex flex-col justify-center select-none'>
+                            <h3 className='form-question'>What is your objective?</h3>
+                            <label class="lg:font-bold cursor-pointer text-xl mb-3" for="CompanyBio">
+                                Company Bio
+                            </label>
+                            <input value={CompanyBio} onChange={(e) => setCompanyBio(e.target.value)} autoComplete="off" class="mb-8 shadow appearance-none border rounded w-100 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="CompanyBio" type="text" placeholder="Company Bio"></input>
                             <div>
-                                <h3 className='form-question'>Please Choose Which of the following you have?</h3>
-                                <div className='flex flex-col lg:flex-row lg:gap-8'>
-                                    <div className='flex gap-2 justify-start items-baseline'>
-                                        <input className='cursor-pointer' type="checkbox" name="youHave" id="website" value='website' />
-                                        <label htmlFor="website" className='lg:font-bold cursor-pointer text-xl'>Website</label>
-                                    </div>
-                                    <div className='flex gap-2 justify-start items-baseline'>
-                                        <input className='cursor-pointer' type="checkbox" name="youHave" id="socialMediaPages" value='socialMediaPages' />
-                                        <label htmlFor="socialMediaPages" className='lg:font-bold cursor-pointer text-xl'>Social Media Pages</label>
-                                    </div>
-                                    <div className='flex gap-2 justify-start items-baseline'>
-                                        <input className='cursor-pointer' type="checkbox" name="youHave" id="googleMyBusiness" value='googleMyBusiness' />
-                                        <label htmlFor="googleMyBusiness" className='lg:font-bold cursor-pointer text-xl'>Google My Business</label>
-                                    </div>
-                                    <div className='flex gap-2 justify-start items-baseline'>
-                                        <input className='cursor-pointer' type="checkbox" name="youHave" id="directoriesListing" value='directoriesListing' />
-                                        <label htmlFor="directoriesListing" className='lg:font-bold cursor-pointer text-xl'>Directories Listing</label>
-                                    </div>
-                                    <div className='flex gap-2 justify-start items-baseline'>
-                                        <input className='cursor-pointer' type="checkbox" name="youHave" id="none" value='none' />
-                                        <label htmlFor="none" className='lg:font-bold cursor-pointer text-xl'>None</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <h3 className='form-question'>What is your marketing goal?</h3>
-                                <div className='flex flex-col lg:flex-row lg:gap-8'>
-                                    <div className='flex gap-2 justify-start items-baseline'>
-                                        <input className='cursor-pointer' type="checkbox" name="marketingGoal" id="branding" value='branding' />
-                                        <label htmlFor="branding" className='lg:font-bold cursor-pointer text-xl'>Branding</label>
-                                    </div>
-                                    <div className='flex gap-2 justify-start items-baseline'>
-                                        <input className='cursor-pointer' type="checkbox" name="marketingGoal" id="sales" value='sales' />
-                                        <label htmlFor="sales" className='lg:font-bold cursor-pointer text-xl'>Sales</label>
-                                    </div>
-                                    <div className='flex gap-2 justify-start items-baseline'>
-                                        <input className='cursor-pointer' type="checkbox" name="marketingGoal" id="digitalTransformation" value='digitalTransformation' />
-                                        <label htmlFor="digitalTransformation" className='lg:font-bold cursor-pointer text-xl'>Digital Transformation</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <h3 className='form-question'>How much is your budget?</h3>
-                                <input type="range" name="budget" id="budget" />
+                                <h3 className='form-question'>What is your monthly marketing budget</h3>
+                                <input type="range" name="budget" id="budget" className='w-full' min="30000" max="500000" step="50000" value={PriceRange} onChange={(e) => setPriceRange(e.target.value)} />
                             </div>
                         </div>
-                    )}
-                    <button
-                        type='submit'
-                        className='bg-liteYellow text-xl uppercase rounded-full ml-auto py-2 px-6 font-bold text-black mt-8'
-                        onClick={(e) => {
-                            e.preventDefault();
-                            seFormnumber(2)
-                        }}
-                    >
-                        astronaut
-                    </button>
-                </form>
+                        <button
+                            type='submit'
+                            className='px-6 py-2 mt-8 ml-auto text-xl font-bold text-black uppercase rounded-full bg-liteYellow'
+                            onClick={(e) => {
+                                e.preventDefault();
+                                seFormnumber(2)
+                            }}
+                        >
+                            astronaut
+                        </button>
+                    </>
+                )}
+            </form>
         </section>
     )
 }
