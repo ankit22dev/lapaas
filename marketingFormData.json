@@ -1,7 +1,8 @@
 {
-  "PriceRange": "480000",
-  "CompanyBio": "Company Bio Test",
-  "NameUser": "Username Test",
+  "PriceRange": "",
+  "CompanyBio": "Company Bio",
+  "NameUser": "Username",
   "PhoneNumber": "9876543210",
-  "EmailUser": "email@test.com"
+  "EmailUser": "email@gmail.com",
+  "Designation": "Designation"
 }

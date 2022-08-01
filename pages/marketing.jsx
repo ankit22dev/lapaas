@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactFullpage from '@fullpage/react-fullpage'
+import Head from 'next/head'
 
 // components
 import Hero from '../components/marketing/Hero.jsx'
@@ -26,12 +27,18 @@ const Marketing = () => {
                 render={comp =>
                 (
                     <ReactFullpage.Wrapper>
+                        <Head>
+                            <title>Marketing Services to Get most out of your Resources</title>
+                            <meta name='description' content='With over 11 years experience in the Marketing Services field, our team of specialists will help you get an edge on your competition.' />
+                        </Head>
                         <Hero comp={comp} />
                         <TwoCards comp={comp} />
                         <ProcessFlowThird />
                         <ProcessFlowFourth />
                         <MarketingProcess />
                         <Suggestion />
+                        <D2C />
+                        <B2B />
                         <ScrollingWhyUs />
                         <Form />
                     </ReactFullpage.Wrapper>

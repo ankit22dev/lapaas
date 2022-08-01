@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 
 // components
 import Hero from '../components/home/Hero'
@@ -18,6 +19,10 @@ const Home = () => {
             render={comp =>
             (
                 <ReactFullpage.Wrapper>
+                    <Head>
+                        <title>Transform Your Business with Lapaas Marketing Agency</title>
+                        <meta name='description' content='Lapaas marketing agency helps brands grow faster and to generate more revenue with our proven marketing methods and innovative solutions.' />
+                    </Head>
                     <Hero comp={comp} />
                     <TwoCards />
                     <About />

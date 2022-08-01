@@ -17,7 +17,8 @@ export default function handler(req, res) {
     CompanyBio: req.body.CompanyBio,
     NameUser: req.body.NameUser,
     PhoneNumber: req.body.PhoneNumber,
-    EmailUser: req.body.EmailUser
+    EmailUser: req.body.EmailUser,
+    Designation: req.body.Designation
   }, null, 2)
 
   fs.writeFile('marketingFormData.json', jsonData, finished)
