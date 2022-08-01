@@ -4,15 +4,14 @@ import FloatingAstraunotBlack from '../../public/imgs/floatingAstraunotWhite.png
 const About = () => {
     return (
         <section className='section'>
-            <div className="section-wrapper md:w-full flex sm:justify-center lg:justify-between items-center">
-                {/* <div className="section-wrapper md:w-full flex justify-between items-center"> */}
-                {/* <div className="flex items-center justify-center lg:justify-between section-wrapper md:w-full"> */}
-                <div className='w-96 relative hidden lg:block' id='flyingAstroImg'>
+            <div className="flex items-center justify-center my-auto section-wrapper md:w-full lg:justify-between">
+            {/* <div className="flex items-center justify-center justify-between section-wrapper md:w-full"> */}
+                <div className='relative hidden w-96 lg:block' id='flyingAstroImg'>
                     <Image src={FloatingAstraunotBlack} alt="HeroImg" className='w-full h-full' />
                 </div>
-                <div className='max-w-lg flex justify-center items-center flex-col'>
+                <div className='flex flex-col items-center justify-center max-w-lg'>
                     <h1 className='heading'>About Us</h1>
-                    <p className='trackind-wide font-medium md:font-semibold text-lg'>
+                    <p className='text-lg font-medium trackind-wide md:font-semibold'>
                     Lapaas Digital is a leading digital marketing company which helps businesses to grow their digital presence. Lapaas Digital not only follows the latest trends in digital marketing, but also focuses on core fundamentals of business and marketing to help your business reach its full potential through well-planned strategies. With over 10 years of experience under our belt, we are experts at what we do.
                     </p>
                 </div>
