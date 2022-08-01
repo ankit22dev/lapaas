@@ -9,13 +9,13 @@ import ProcessFlow from '../components/development/ProcessFlow'
 import MVP from '../components/common/MVP'
 import B2B from '../components/marketing/B2B'
 import D2C from '../components/marketing/D2C'
-import ScrollingWhyUs from '../components/common/ScrollingWhyUs'
 import CaseStudy from '../components/development/CaseStudy'
 import MarketingProcess from '../components/marketing/MarketingProcess'
 import ProcessFlowThird from '../components/marketing/ProcessFlowThird.jsx'
 import ProcessFlowFourth from '../components/marketing/ProcessFlowFourth.jsx'
 import Suggestion from '../components/marketing/Suggestion.jsx'
 import Form from '../components/marketing/Form.jsx'
+import ScrollingWhyUs from '../components/marketing/ScrollingWhyUs.jsx'
 
 
 
