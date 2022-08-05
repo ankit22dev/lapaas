@@ -12,7 +12,8 @@ const Hero = ({ comp }) => {
   return (
     <section className="section active">
       <div className="relative flex h-full px-6 py-8">
-        <div className={`${slide ? "w-full" : "w-0" } overflow-hidden transition-all duration-1000 relative flex py-12 flex-col justify-center items-center bg-[#d14b39]/95`}>
+        {/* <div className="grid md:grid-cols-2 lg:grid-cols-4"> */}
+        <div className={`${slide ? "w-full" : "w-0"} overflow-hidden transition-all duration-1000 relative py-12 flex-col justify-center items-center bg-[#d14b39]/95 lg:flex hidden`}>
           <div className="relative hidden w-60 lg:block" id="flyingAstroImg">
             <Image src={FloatingAstraunotBlack} alt="HeroImg" className="w-full h-full" />
           </div>
@@ -20,7 +21,7 @@ const Hero = ({ comp }) => {
             Course
           </a>
         </div>
-        <div className={`${slide ? "w-0 opacity-0" : "w-full lg:w-3/5 opacity-100" } overflow-hidden transition-all duration-1000 relative flex justify-center items-center`}>
+        <div className={`${slide ? "w-0 opacity-0" : "w-full lg:w-3/5 opacity-100"} overflow-hidden transition-all duration-1000 relative flex justify-center items-center`}>
           <div className="flex flex-col max-w-xl py-12 mx-auto">
             <div className="items-center justify-center">
               <h1 className="heading">
@@ -36,7 +37,10 @@ const Hero = ({ comp }) => {
               </p>
             </div>
             <div className="flex gap-6 mt-6">
-              <button type="button" className="w-auto mt-2 red-btn" onClick={() => setSlide(true)}>
+              <button type="button" className="w-auto mt-2 red-btn  lg:flex hidden" onClick={() => setSlide(true)}>
+                Services
+              </button>
+              <button type="button" className="w-auto mt-2 red-btn  lg:hidden flex" onClick={() => {comp.fullpageApi.moveSectionDown();}}>
                 Services
               </button>
               <button type="button" className="w-auto mt-2 red-btn" onClick={() => { comp.fullpageApi.moveTo(5); }}>
@@ -45,15 +49,15 @@ const Hero = ({ comp }) => {
             </div>
           </div>
         </div>
-        <div className={`${slide ? "w-full" : "lg:w-2/5" } relative origin-right overflow-hidden transition-all duration-1000 flex py-12 flex-col justify-center items-center`}>
-          <div className={`${slide ? "w-60" : "lg:w-1/2" } relative hidden lg:block`} id="heroImg">
+        <div className={`${slide ? "w-full" : "lg:w-2/5"} relative origin-right overflow-hidden transition-all duration-1000 py-12 flex-col justify-center items-center lg:flex hidden`}>
+          <div className={`${slide ? "w-60" : "lg:w-1/2"} relative hidden lg:block`} id="heroImg">
             <Image src={HeroImg} alt="HeroImg" className="w-full h-full" />
           </div>
-          <button type="button" className={`red-btn transition-all mt-auto duration-1000 ${slide ? "opacity-100 visible" : "opacity-0 hidden" }`} onClick={() => { comp.fullpageApi.moveSectionDown(); }}>
+          <button type="button" className={`red-btn transition-all mt-auto duration-1000 ${slide ? "opacity-100 visible" : "opacity-0 hidden"}`} onClick={() => { comp.fullpageApi.moveSectionDown(); }}>
             Services
           </button>
         </div>
-        <div className={`${slide ? "w-full" : "w-0" } overflow-hidden transition-all duration-1000 relative flex py-12 flex-col justify-center items-center bg-[#193247]/95`}>
+        <div className={`${slide ? "w-full" : "w-0"} overflow-hidden transition-all duration-1000 relative py-12 flex-col justify-center items-center bg-[#193247]/95 lg:flex hidden`}>
           <div className="relative hidden w-48 lg:block" id="flyingAstroImg">
             <Image src={Rocket} alt="HeroImg" className="w-full h-full" />
           </div>
@@ -64,7 +68,7 @@ const Hero = ({ comp }) => {
         </div>
 
         {slide && (
-          <div className="absolute top-0 -translate-x-1/2 cursor-pointer left-1/2" onClick={() => setSlide(false)}>
+          <div className="absolute top-0 -translate-x-1/2 cursor-pointer left-1/2  lg:flex hidden" onClick={() => setSlide(false)}>
             <div className="w-10">
               <Image src={CloseIcon} alt="close" className="w-full h-full" />
             </div>

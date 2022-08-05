@@ -19,7 +19,7 @@ const ProcessFlowThird = () => {
         setArticleData("We can help you develop your idea into a Minimum Viable Product (MVP). This is the simplest, most essential version of your product that will allow you to test your assumptions and get feedback from customers.")
     }
 
-    function WebsiteDevelopment() {
+    function Development() {
         setHeadingData("Professional website at affordable prices")
         setArticleData("Lapaas is a leading website development company that provides affordable web design services. Our design services not only help you stand out from the crowd but also help you to get more sales and leads.")
     }
@@ -50,7 +50,7 @@ const ProcessFlowThird = () => {
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                                     <button onClick={() => Prototyping()} className={'border-2 m-1 border-white py-2 bg-mainRed text-white'}>Prototyping</button>
                                     <button onClick={() => MVP()} className={'border-2 m-1 border-white py-2 bg-mainRed text-white'}>MVP</button>
-                                    <button onClick={() => WebsiteDevelopment()} className={'border-2 m-1 border-white py-2 bg-mainRed text-white'}>Website Development</button>
+                                    <button onClick={() => Development()} className={'border-2 m-1 border-white py-2 bg-mainRed text-white'}>Development</button>
                                     <button onClick={() => AppDevelopment()} className={'border-2 m-1  border-white py-2 bg-mainRed text-white'}>App Development</button>
                                 </div>
                             </div>
