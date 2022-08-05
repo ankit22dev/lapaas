@@ -20,7 +20,7 @@ const ScrollingWhyUs = ({ isHome = false }) => {
                     <div className='flex items-center justify-center h-screen'>
                         <div className='max-w-lg px-4 text-center'>
                             <h1 className='heading'>We work like our business</h1>
-                            <p className='text-lg font-medium trackind-wide md:font-semibold '>
+                            <p className='text-lg font-medium trackind-wide md:font-semibold md:text-xl'>
                                 We provide our services as it is our business. We offer an array of packages to suit all needs.
                             </p>
                         </div>
@@ -28,7 +28,7 @@ const ScrollingWhyUs = ({ isHome = false }) => {
                     <div className='flex items-center justify-center h-screen'>
                         <div className='max-w-lg px-4 text-center'>
                             <h1 className='heading'>Affordable</h1>
-                            <p className='text-lg font-medium trackind-wide md:font-semibold '>
+                            <p className='text-lg font-medium trackind-wide md:font-semibold md:text-xl'>
                                 Our clients love us because we provide affordable services without losing the quality.
                             </p>
                         </div>
@@ -36,7 +36,7 @@ const ScrollingWhyUs = ({ isHome = false }) => {
                     <div className='flex items-center justify-center h-screen'>
                         <div className='max-w-lg px-4 text-center'>
                             <h1 className='heading'>Get Most Out of Your Budget </h1>
-                            <p className='text-lg font-medium trackind-wide md:font-semibold '>
+                            <p className='text-lg font-medium trackind-wide md:font-semibold md:text-xl'>
                                 Our team of experts work very hard for your business, so you can get maximum results from your resources.
                             </p>
                         </div>
