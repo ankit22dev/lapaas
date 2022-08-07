@@ -42,7 +42,7 @@ const Marketing = () => {
             {/* <D2C />
                         <B2B /> */}
             <ScrollingWhyUs />
-            <Form />
+            {/* <Form /> */}
           </ReactFullpage.Wrapper>
         )}
       />

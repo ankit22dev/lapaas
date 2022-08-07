@@ -26,7 +26,7 @@ const Home = () => {
           <TwoCards />
           <About />
           <ScrollingWhyUs isHome={true} />
-          <Form />
+          {/* <Form /> */}
         </ReactFullpage.Wrapper>
       )}
     />

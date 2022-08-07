@@ -24,7 +24,7 @@ const consultation = () => {
                             <TopHero comp={comp} />
                             <Suggestion />
                             <ScrollingWhyUs />
-                            <Form />
+                            {/* <Form /> */}
                         </ReactFullpage.Wrapper>
                     </ReactFullpage.Wrapper>
                 )

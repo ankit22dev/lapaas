@@ -1,9 +1,9 @@
 {
-  "IdeaValidation": false,
-  "BusinessGrowth": true,
+  "IdeaValidation": true,
+  "BusinessGrowth": false,
   "Marketing": false,
   "CompanyBio": "Company Bio Test",
-  "NameUser": "Username",
-  "PhoneNumber": "9876543210",
+  "NameUser": "Username Test",
+  "PhoneNumber": "1234567890",
   "EmailUser": "email@test.com"
 }

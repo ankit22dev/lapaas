@@ -24,7 +24,7 @@ const development = () => {
                         <Hero comp={comp} />
                         <ProcessFlowThird />
                         <ScrollingWhyUs />
-                        <Form />
+                        {/* <Form /> */}
                     </ReactFullpage.Wrapper>
                 )
                 }
