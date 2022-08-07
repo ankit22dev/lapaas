@@ -2,6 +2,7 @@ import React from 'react'
 import ReactFullpage from '@fullpage/react-fullpage'
 import Image from 'next/image'
 import WhyNotAstraunotBlue from '../../public/imgs/whyUsBlue.png'
+import Footer from '../layouts/Footer'
 
 const ScrollingWhyUs = () => {
     return (
@@ -33,6 +34,7 @@ const ScrollingWhyUs = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </section>
     )
 }

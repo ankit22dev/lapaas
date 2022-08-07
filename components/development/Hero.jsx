@@ -6,6 +6,8 @@ import Rocket from "../../public/imgs/spaceship.png";
 import CloseIcon from "../../public/svgs/close.svg";
 import Link from "next/link";
 import Modal from '@material-ui/core/Modal';
+import Slider from '@mui/material/Slider';
+import CloseIconBlack from "../../public/imgs/close.png";
 
 const Hero = ({ comp }) => {
   const [slide, setSlide] = useState(false);
@@ -155,6 +157,7 @@ const Hero = ({ comp }) => {
       >
         <>
           <section className='section bg-white'>
+          <img src={CloseIconBlack.src} alt="#ImgNotFound" width="30px" height="30px" className="float-right cursor-pointer" onClick={handleClose} />
             <form className='flex flex-col w-full max-w-4xl mx-auto' onSubmit={(e) => { e.preventDefault() }}>
               {formnumber !== 1 ? (
                 <div className='flex flex-col justify-start w-full select-none'>
@@ -192,7 +195,14 @@ const Hero = ({ comp }) => {
                     <div className='mb-8'>
                       <h3 className='heading'>What do you want to develop?</h3><div>
                         <h3 className='form-question'>What is your total budget for this project?</h3>
-                        <input type="range" name="budget" id="budget" className='w-full' min="20000" max="1000000" step="50000" value={PriceRange} onChange={(e) => setPriceRange(e.target.value)} />
+                        {/* <input type="range" name="budget" id="budget" className='w-full' min="20000" max="1000000" value={PriceRange} onChange={(e) => setPriceRange(e.target.value)} /> */}
+                        <Slider
+                        valueLabelDisplay="auto"
+                        min={20000}
+                        max={1000000}
+                        value={PriceRange}
+                        onChange={(e) => setPriceRange(e.target.value)}
+                      />
                       </div>
                     </div>
                   </div>
@@ -204,7 +214,7 @@ const Hero = ({ comp }) => {
                       seFormnumber(2)
                     }}
                   >
-                    astronaut
+                    Next
                   </button>
                 </>
               )}

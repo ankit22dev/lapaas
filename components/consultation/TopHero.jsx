@@ -229,7 +229,7 @@ const TopHero = ({ comp }) => {
                       seFormnumber(2)
                     }}
                   >
-                    astronaut
+                    Next
                   </button>
                 </>
               )}

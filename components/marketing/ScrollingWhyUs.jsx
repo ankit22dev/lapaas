@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import whyUsBlack from "../../public/imgs/whyUsBlack.png";
 import whyUsBlue from "../../public/imgs/whyUsBlue.png";
+import Footer from "../layouts/Footer";
 
 const ScrollingWhyUs = ({ isHome = false }) => {
   return (
@@ -37,6 +38,7 @@ const ScrollingWhyUs = ({ isHome = false }) => {
           </div>
         </div>
       </div>
+      <Footer />
     </section>
   );
 };
