@@ -44,17 +44,17 @@ const ProgramFor = () => {
             <div className="hero-section">
                 <div>
                     <section className="text-white ">
-                        <div className="max-w-screen-xl px-4 py-10 md:py-14 mx-auto sm:px-6 lg:px-8">
+                        <div className="max-w-screen-xl px-4 py-10 mx-auto md:py-14 sm:px-6 lg:px-8">
                             <div className="max-w-lg mx-auto text-center">
                                 <h2 className="text-3xl font-bold sm:text-4xl">
                                     Who is this program for?
                                 </h2>
                             </div>
-                            <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-2 justify-center">
+                            <div className="grid justify-center grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-2">
                                 {customers.map((customer) => (
                                     <div
                                         key={customer.key}
-                                        className="bg-white mr-0 md:mr-6 p-4 flex transition border border-gray-800 shadow-xl rounded-sm"
+                                        className="flex p-4 mr-0 transition bg-white border border-gray-800 rounded-sm shadow-xl md:mr-6"
                                     >
                                         <div className="flex">
                                             <svg
@@ -83,7 +83,7 @@ const ProgramFor = () => {
                                     </div>
                                 ))}
                             </div>
-                            <div className="bg-white mr-0 md:mr-6 p-4 flex transition border border-gray-800 shadow-xl rounded-sm mt-8">
+                            <div className="flex p-4 mt-8 mr-0 transition bg-white border border-gray-800 rounded-sm shadow-xl md:mr-6">
                                 <div className="flex">
                                     <svg
                                         className="w-8 h-10 text-[#D14B39] mr-2"

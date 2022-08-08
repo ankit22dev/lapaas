@@ -65,9 +65,13 @@ const Hero = ({ comp }) => {
           <div className="relative hidden w-60 lg:block" id="flyingAstroImg">
             <Image src={FloatingAstraunotBlack} alt="HeroImg" className="w-full h-full" />
           </div>
-          <a target="_blank" href="https://course.lapaas.com/" rel="noopener noreferrer" className={`liteYellow-btn mt-auto`}>
-            Course
-          </a>
+          {/* <a target="_blank" href="https://course.lapaas.com/" rel="noopener noreferrer" className={`liteYellow-btn mt-auto`}> */}
+          <Link href="/coursepage">
+            <a className={`liteYellow-btn mt-auto`}>
+              Course
+            </a>
+          </Link>
+          {/* </a> */}
         </div>
         <div className={`${slide ? "w-0 opacity-0" : "w-full lg:w-3/5 opacity-100"} overflow-hidden transition-all duration-1000 relative flex justify-center items-center`}>
           <div className="flex flex-col max-w-xl py-12 mx-auto">
@@ -85,10 +89,10 @@ const Hero = ({ comp }) => {
               </p>
             </div>
             <div className="flex gap-6 mt-6">
-              <button type="button" className="w-auto mt-2 red-btn  lg:flex hidden" onClick={() => setSlide(true)}>
+              <button type="button" className="hidden w-auto mt-2 red-btn lg:flex" onClick={() => setSlide(true)}>
                 Services
               </button>
-              <button type="button" className="w-auto mt-2 red-btn  lg:hidden flex" onClick={() => { comp.fullpageApi.moveSectionDown(); }}>
+              <button type="button" className="flex w-auto mt-2 red-btn lg:hidden" onClick={() => { comp.fullpageApi.moveSectionDown(); }}>
                 Services
               </button>
               <button type="button" className="w-auto mt-2 red-btn" onClick={handleOpen}>
@@ -116,7 +120,7 @@ const Hero = ({ comp }) => {
         </div>
 
         {slide && (
-          <div className="absolute top-0 -translate-x-1/2 cursor-pointer left-1/2  lg:flex hidden" onClick={() => setSlide(false)}>
+          <div className="absolute top-0 hidden -translate-x-1/2 cursor-pointer left-1/2 lg:flex" onClick={() => setSlide(false)}>
             <div className="w-10">
               <Image src={CloseIcon} alt="close" className="w-full h-full" />
             </div>
@@ -127,10 +131,10 @@ const Hero = ({ comp }) => {
         open={open}
         onClose={handleClose}
         style={{ margin: "auto" }}
-        className='md:w-1/2 w-full h-1/2'
+        className='w-full md:w-1/2 h-1/2'
       >
         <>
-          <section className='section bg-white'>
+          <section className='bg-white section'>
             <img src={CloseIconBlack.src} alt="#ImgNotFound" width="30px" height="30px" className="float-right cursor-pointer" onClick={handleClose} />
             <form className='flex flex-col w-full max-w-4xl mx-auto' onSubmit={(e) => { e.preventDefault() }}>
               {formnumber !== 1 ? (

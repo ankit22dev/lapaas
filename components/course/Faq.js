@@ -1,6 +1,7 @@
 import React from "react";
 import { Disclosure } from "@headlessui/react";
 import { FaAngleDown } from "react-icons/fa";
+import Footer from "../layouts/Footer";
 
 const Faq = () => {
 
@@ -86,6 +87,9 @@ const Faq = () => {
                         ))}
                     </dl>
                 </div>
+            </div>
+            <div className='absolute bottom-0 w-full'>
+                <Footer />
             </div>
         </section>
     );

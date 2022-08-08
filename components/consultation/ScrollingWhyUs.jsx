@@ -26,7 +26,7 @@ const ScrollingWhyUs = () => {
                             <p className='text-lg font-medium trackind-wide md:font-semibold '>We will help you build your business and create new strategies for growth.</p>
                         </div>
                     </div>
-                    <div className='flex items-center justify-center h-screen'>
+                    <div className='flex items-center justify-center h-2/5'>
                         <div className='max-w-lg px-4 text-center'>
                             <h1 className='heading'>Unbiased Feedback</h1>
                             <p className='text-lg font-medium trackind-wide md:font-semibold '>In business consultation, you will have an honest opinion about your business and on how you can improve it.</p>

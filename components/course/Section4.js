@@ -6,7 +6,7 @@ const Section4 = () => {
         <section className="transition-all section">
             <div className="hero-section">
                 <div className="my-8">
-                    <h2 className="text-4xl lg:text-4xl font-extrabold uppercase text-center text-white">
+                    <h2 className="text-4xl font-extrabold text-center text-white uppercase lg:text-4xl">
                         Know Your Mentor
                     </h2>
                     <div className="grid sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-2 xl:grid-cols-2 mx-8 ,mb-8 md:mx-20 lg:mx-28 pt-10 gap-6 text-white">
@@ -23,12 +23,12 @@ const Section4 = () => {
                                 </span>
                                 .
                             </p>
-                            <p className="text-base md:text-xl md:leading-8 mt-4">
+                            <p className="mt-4 text-base md:text-xl md:leading-8">
                                 Sahil loves to help people and his mission is to make internet
                                 marketing easy and fun for everyone. Sahil started his life as a
                                 perfectly imperfect child with many flaws.
                             </p>
-                            <p className="text-base md:text-xl md:leading-8 mt-4">
+                            <p className="mt-4 text-base md:text-xl md:leading-8">
                                 But he was never concerned about the end result. In his free time,
                                 <span className="mx-1 font-semibold text-[#ff5c47]">
                                     Sahil loves investing, singing and playing cricket.

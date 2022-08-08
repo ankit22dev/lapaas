@@ -29,11 +29,9 @@ const NavigationMenu = ({ isNavOpen, setIsNavOpen }) => {
 
   return (
     <div
-      className={`${
-        isNavOpen ? "top-0" : "-top-full"
-      } fixed text-white font-["Poppins"] h-100 left-0 h-screen w-screen bg-black ${
-        setIsNavOpen ? "z-[10]" : "md:z-[101]"
-      } p-4 transform transition-all duration-1000`}
+      className={`${isNavOpen ? "top-0" : "-top-full"
+        } fixed text-white font-["Poppins"] h-100 left-0 h-screen w-screen bg-black ${setIsNavOpen ? "z-[10]" : "md:z-[101]"
+        } p-4 transform transition-all duration-1000`}
     >
       {/* <div className='flex items-start justify-center h-full p-32 border-8 border-white'> */}
       <div className="flex items-start justify-center h-full p-32 lg:border-8 lg:border-white">
@@ -51,9 +49,8 @@ const NavigationMenu = ({ isNavOpen, setIsNavOpen }) => {
               <li>
                 <Link href="/" className="">
                   <a
-                    className={`uppercase text-5xl font-bold p-2 ${
-                      currentPage == "/" ? "text-white" : "text-white/50"
-                    } hover:text-white`}
+                    className={`uppercase text-5xl font-bold p-2 ${currentPage == "/" ? "text-white" : "text-white/50"
+                      } hover:text-white`}
                     onClick={() => setIsNavOpen(false)}
                   >
                     Home
@@ -63,11 +60,10 @@ const NavigationMenu = ({ isNavOpen, setIsNavOpen }) => {
               <li>
                 <Link href="/marketing">
                   <a
-                    className={`uppercase text-5xl font-bold p-2 ${
-                      currentPage == "/marketing"
+                    className={`uppercase text-5xl font-bold p-2 ${currentPage == "/marketing"
                         ? "text-white"
                         : "text-white/50"
-                    } hover:text-white`}
+                      } hover:text-white`}
                     onClick={() => setIsNavOpen(false)}
                   >
                     Marketing
@@ -77,11 +73,10 @@ const NavigationMenu = ({ isNavOpen, setIsNavOpen }) => {
               <li>
                 <Link href="/development">
                   <a
-                    className={`uppercase text-5xl font-bold p-2 ${
-                      currentPage == "/development"
+                    className={`uppercase text-5xl font-bold p-2 ${currentPage == "/development"
                         ? "text-white"
                         : "text-white/50"
-                    } hover:text-white`}
+                      } hover:text-white`}
                     onClick={() => setIsNavOpen(false)}
                   >
                     Development
@@ -91,11 +86,10 @@ const NavigationMenu = ({ isNavOpen, setIsNavOpen }) => {
               <li>
                 <Link href="/consultance">
                   <a
-                    className={`uppercase text-5xl font-bold p-2 ${
-                      currentPage == "/consultance"
+                    className={`uppercase text-5xl font-bold p-2 ${currentPage == "/consultance"
                         ? "text-white"
                         : "text-white/50"
-                    } hover:text-white`}
+                      } hover:text-white`}
                     onClick={() => setIsNavOpen(false)}
                   >
                     Consultance
@@ -103,16 +97,17 @@ const NavigationMenu = ({ isNavOpen, setIsNavOpen }) => {
                 </Link>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  href="https://course.lapaas.com/"
-                  rel="noopener noreferrer"
-                  className={`uppercase text-5xl font-bold p-2 ${
-                    currentPage == "/course" ? "text-white" : "text-white/50"
-                  } hover:text-white`}
-                >
-                  Course
-                </a>
+                <Link href="/coursepage">
+                  <a
+                    className={`uppercase text-5xl font-bold p-2 ${currentPage == "/coursepage"
+                        ? "text-white"
+                        : "text-white/50"
+                      } hover:text-white`}
+                    onClick={() => setIsNavOpen(false)}
+                  >
+                    Course
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -129,7 +124,7 @@ const NavigationMenu = ({ isNavOpen, setIsNavOpen }) => {
                 <li>New Delhi, Delhi</li>
                 <li>110042</li>
               </ul>
-              <div className="bg-dark mt-5 flex flex-row justify-end align-center">
+              <div className="flex flex-row justify-end mt-5 bg-dark align-center">
                 <a
                   className="rounded-full"
                   href="https://www.facebook.com/lapaasindia/"

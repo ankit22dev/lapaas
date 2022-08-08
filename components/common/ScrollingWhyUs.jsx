@@ -34,7 +34,7 @@ const ScrollingWhyUs = ({ isHome = false }) => {
                             </p>
                         </div>
                     </div>
-                    <div className='flex items-center justify-center h-screen'>
+                    <div className='flex items-center justify-center h-2/5'>
                         <div className='max-w-lg px-4 text-center'>
                             <h1 className='heading'>Get Most Out of Your Budget </h1>
                             <p className='text-lg font-medium trackind-wide md:font-semibold md:text-xl'>

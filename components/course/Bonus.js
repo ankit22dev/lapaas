@@ -8,7 +8,7 @@ const Bonus = () => {
     const CheckIcon = () => (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="self-center flex-shrink-0 mr-2 h-5 w-5 text-white"
+          className="self-center flex-shrink-0 w-5 h-5 mr-2 text-white"
           viewBox="0 0 20 20"
           fill="currentColor"
         >
@@ -23,11 +23,11 @@ const Bonus = () => {
     return (
         <section className="transition-all section">
             <div className="hero-section">
-            <div className="w-full mt-10 px-5 flex flex-col items-center bg-gradient-to-tr font-body">
-        <h2 className="flex justify-center text-2xl sm:text-3xl md:text-4xl  font-bold mb-0 text-white text-center">
+            <div className="flex flex-col items-center w-full px-5 mt-10 bg-gradient-to-tr font-body">
+        <h2 className="flex justify-center mb-0 text-2xl font-bold text-center text-white sm:text-3xl md:text-4xl">
           Hurry Up Don’t Miss The Opportunity
         </h2>
-        <h3 className="flex justify-center text-2xl sm:text-3xl md:text-4xl  my-4 text-white ">
+        <h3 className="flex justify-center my-4 text-2xl text-white sm:text-3xl md:text-4xl ">
           Buy Now & Get
         </h3>
         <div className="grid grid-cols-3 gap-6 max-w-7xl">
@@ -37,29 +37,29 @@ const Bonus = () => {
             <h2 className="font-title mb-1 text-3xl font-extrabold uppercase tracking-wider border-2 border-white bg-white text-[#193247] rounded-sm p-2">
               Bonus - 1
             </h2>
-            <ul className="mt-10 flex flex-col">
-              <li className="mb-4 inline-flex text-2xl text-center font-bold">
+            <ul className="flex flex-col mt-10">
+              <li className="inline-flex mb-4 text-2xl font-bold text-center">
                 50 Woo Commerce <br /> All Paid Plugin Bundle
                 <br /> Worth ₹15000/-
               </li>
-              <li className="mb-3 inline-flex font-medium text-lg">
+              <li className="inline-flex mb-3 text-lg font-medium">
                 <CheckIcon />
                 Woocommerce Customizer
               </li>
-              <li className="mb-3 inline-flex font-medium text-lg">
+              <li className="inline-flex mb-3 text-lg font-medium">
                 <CheckIcon />
                 Woocommerce Multilingual
               </li>
-              <li className="mb-3 inline-flex font-medium text-lg">
+              <li className="inline-flex mb-3 text-lg font-medium">
                 <CheckIcon />
                 Woocommerce Booster
               </li>
-              <li className="mb-3 inline-flex font-medium text-lg">
+              <li className="inline-flex mb-3 text-lg font-medium">
                 <CheckIcon />
                 Other 45+ Plugins
               </li>
             </ul>
-            <h3 className="font-semibold text-xl py-4 uppercase italic">
+            <h3 className="py-4 text-xl italic font-semibold uppercase">
               Offer Expired
             </h3>
             <Firstcount />
@@ -71,28 +71,28 @@ const Bonus = () => {
             <h2 className="font-title mb-1 text-3xl font-extrabold uppercase tracking-wider border-2 border-white bg-white text-[#193247] rounded-sm p-2">
               Bonus - 2
             </h2>
-            <ul className="mt-10 flex flex-col">
-              <li className="mb-4 inline-flex text-2xl text-center font-bold">
+            <ul className="flex flex-col mt-10">
+              <li className="inline-flex mb-4 text-2xl font-bold text-center">
                 25 GPL WordPress Website Theme <br /> Worth ₹7500/-
               </li>
-              <li className="mb-3 inline-flex font-medium text-lg">
+              <li className="inline-flex mb-3 text-lg font-medium">
                 <CheckIcon />
                 Astra
               </li>
-              <li className="mb-3 inline-flex font-medium text-lg">
+              <li className="inline-flex mb-3 text-lg font-medium">
                 <CheckIcon />
                 Avada
               </li>
-              <li className="mb-3 inline-flex font-medium text-lg">
+              <li className="inline-flex mb-3 text-lg font-medium">
                 <CheckIcon />
                 NewsPaper
               </li>
-              <li className="mb-3 inline-flex font-medium text-lg">
+              <li className="inline-flex mb-3 text-lg font-medium">
                 <CheckIcon />
                 Other 20+ Themes
               </li>
             </ul>
-            <h3 className="font-semibold text-xl py-4 uppercase italic">
+            <h3 className="py-4 text-xl italic font-semibold uppercase">
               Offer Expired
             </h3>
             <Secondcount />
@@ -107,43 +107,43 @@ const Bonus = () => {
             {/* Divide line */}
             {/* <span className="w-28 h-1.5 bg-white" /> */}
             {/* Features */}
-            <ul className="mt-10 flex flex-col">
-              <li className="mb-4 inline-flex text-2xl text-center font-bold">
+            <ul className="flex flex-col mt-10">
+              <li className="inline-flex mb-4 text-2xl font-bold text-center">
                 25 Important WordPress Plugin Worth ₹7500/-
               </li>
-              <li className="mb-3 inline-flex font-medium text-lg">
+              <li className="inline-flex mb-3 text-lg font-medium">
                 <CheckIcon />
                 Yoast SEO
               </li>
-              <li className="mb-3 inline-flex font-medium text-lg">
+              <li className="inline-flex mb-3 text-lg font-medium">
                 <CheckIcon />
                 Wp Rocket
               </li>
-              <li className="mb-3 inline-flex font-medium text-lg">
+              <li className="inline-flex mb-3 text-lg font-medium">
                 <CheckIcon />
                 Wp Forms
               </li>
-              <li className="mb-3 inline-flex font-medium text-lg">
+              <li className="inline-flex mb-3 text-lg font-medium">
                 <CheckIcon />
                 Other 20+ Plugins
               </li>
             </ul>
-            <h3 className="font-semibold text-xl py-4 uppercase italic">
+            <h3 className="py-4 text-xl italic font-semibold uppercase">
               Offer Expired
             </h3>
             <Thirdcount />
           </div>
         </div>
-        <h3 className="flex justify-center text-2xl sm:text-3xl md:text-4xl font-semibold mt-8 text-white text-center">
+        <h3 className="flex justify-center mt-8 text-2xl font-semibold text-center text-white sm:text-3xl md:text-4xl">
           Instalment Also Available
         </h3>
-        <p className="text-white text-base md:text-lg mt-3 italic">
+        <p className="mt-3 text-base italic text-white md:text-lg">
           1st Instalment Before 17th July
         </p>
-        <p className="text-white text-base md:text-lg mt-3 italic">
+        <p className="mt-3 text-base italic text-white md:text-lg">
           2nd Instalment Before 15th August
         </p>
-        <div className="flex justify-center uppercase mt-8">
+        <div className="flex justify-center mt-8 uppercase">
           <button
             type="button"
             className="relative inline-flex items-center mx-7 px-7 py-3.5 rounded-sm border border-transparent bg-green-600 text-lg sm:text-2xl text-white font-medium uppercase hover:bg-green-700"
@@ -151,7 +151,7 @@ const Bonus = () => {
             ENROLLMENT WILL OPEN SOON
           </button>
         </div>
-        <div className="flex justify-center items-center mt-5">
+        <div className="flex items-center justify-center mt-5">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdo-ItFZwrSoRgFDkAYgdtaTmtmBBEEBpGHfVXbs3vfAwEI-w/viewform?usp=sf_link">
             <button
               type="button"
@@ -162,7 +162,7 @@ const Bonus = () => {
           </a>
         </div>
       </div>
-      <div className="bg-white mx-5 md:mx-14 px-6 py-4 flex transition border border-gray-800 shadow-xl rounded-md mt-8 text-center">
+      <div className="flex px-6 py-4 mx-5 mt-8 text-center transition bg-white border border-gray-800 rounded-md shadow-xl md:mx-14">
         <div>
           <h3 className="text-xl mb-3 font-bold text-[#193247]">Note</h3>
           <p className="text-[#193247] font-medium">
@@ -172,7 +172,7 @@ const Bonus = () => {
           </p>
         </div>
       </div>
-      <p className="italic md:w-1/2 mx-5 md:mx-auto mt-5 mb-10 text-center text-white">
+      <p className="mx-5 mt-5 mb-10 italic text-center text-white md:w-1/2 md:mx-auto">
         200+ Hours of Content + 25+ Resources + Private WhatsApp Group + 6
         Months Support + Mentorship + Practical Assignment
       </p>

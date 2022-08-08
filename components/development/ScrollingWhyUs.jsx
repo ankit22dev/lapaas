@@ -27,7 +27,7 @@ const ScrollingWhyUs = () => {
                             <p className='text-lg font-medium trackind-wide md:font-semibold '>We always deliver our projects on time because we know how important it is for our clients.</p>
                         </div>
                     </div>
-                    <div className='flex items-center justify-center h-screen'>
+                    <div className='flex items-center justify-center h-2/5'>
                         <div className='max-w-lg px-4 text-center'>
                             <h1 className='heading'>Affordable</h1>
                             <p className='text-lg font-medium trackind-wide md:font-semibold '>Our clients love us because we provide affordable digital marketing services without losing the quality.</p>
