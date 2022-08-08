@@ -9,7 +9,7 @@ const ScrollingWhyUs = () => {
         <section className='section scrolling-section'>
             <div className="flex">
                 <div className='sticky top-0 left-0 flex items-center justify-center max-h-screen lg:w-1/2'>
-                    <div className='w-[45vw] absolute left-1/2 -translate-x-1/2 bottom-0 hidden lg:block'>
+                    <div className='w-[45vw] absolute left-1/2 -translate-x-1/2 bottom-0 hidden lg:block -mb-3'>
                         <Image src={WhyNotAstraunotBlue} alt="HeroImg" className='w-full h-full' />
                     </div>
                 </div>
@@ -27,7 +27,7 @@ const ScrollingWhyUs = () => {
                             <p className='text-lg font-medium trackind-wide md:font-semibold '>We always deliver our projects on time because we know how important it is for our clients.</p>
                         </div>
                     </div>
-                    <div className='flex items-center justify-center h-2/5'>
+                    <div className='flex items-center justify-center h-screen'>
                         <div className='max-w-lg px-4 text-center'>
                             <h1 className='heading'>Affordable</h1>
                             <p className='text-lg font-medium trackind-wide md:font-semibold '>Our clients love us because we provide affordable digital marketing services without losing the quality.</p>
@@ -35,7 +35,9 @@ const ScrollingWhyUs = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+            <div className='sticky w-full bottom-0'>
+                <Footer />
+            </div>
         </section>
     )
 }

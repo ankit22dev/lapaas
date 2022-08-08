@@ -9,7 +9,7 @@ const ScrollingWhyUs = ({ isHome = false }) => {
         <section className='section scrolling-section'>
             <div className="flex">
                 <div className='sticky top-0 left-0 flex items-center justify-center max-h-screen lg:w-1/2'>
-                    <div className='w-[45vw] absolute left-1/2 -translate-x-1/2 bottom-0 hidden lg:block'>
+                    <div className='w-[45vw] absolute left-1/2 -translate-x-1/2 bottom-0 hidden lg:block -mb-3'>
                         {isHome ?
                             <Image src={whyUsBlack} alt="HeroImg" className='w-full h-full' />
                             :
@@ -34,7 +34,7 @@ const ScrollingWhyUs = ({ isHome = false }) => {
                             </p>
                         </div>
                     </div>
-                    <div className='flex items-center justify-center h-2/5'>
+                    <div className='flex items-center justify-center h-screen'>
                         <div className='max-w-lg px-4 text-center'>
                             <h1 className='heading'>Get Most Out of Your Budget </h1>
                             <p className='text-lg font-medium trackind-wide md:font-semibold md:text-xl'>
@@ -44,7 +44,9 @@ const ScrollingWhyUs = ({ isHome = false }) => {
                     </div>
                 </div>
             </div>
-            <Footer />
+            <div className='sticky w-full bottom-0'>
+                <Footer />
+            </div>
         </section>
     )
 }
