@@ -10,7 +10,10 @@ module.exports = {
                 "mainRed": "#D14B39",
                 "liteYellow": "#f4ddb5",
                 "liteBlue": "#193247",
-            }
+            },
+            backgroundImage: {
+                'TitleImgCardBg': "url('../public/imgs/backgroundWhite.png')",
+              },
         },
     },
     plugins: [],
