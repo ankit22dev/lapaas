@@ -32,7 +32,7 @@ const ProcessFlowThird = () => {
     return (
         <section className="transition-all section">
             <div className="flex items-center justify-center w-full gap-10 section-wrapper lg:py-4">
-                <div class="grid lg:grid-cols-2 gap-4">
+                <div className="grid lg:grid-cols-2 gap-4">
                     <div className='mx-auto lg:mx-0'>
                         <div className='w-full'>
                             <div className='w-48'>
