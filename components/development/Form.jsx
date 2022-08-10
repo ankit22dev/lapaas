@@ -40,22 +40,22 @@ const Form = () => {
                     <div className='flex flex-col justify-start w-10/12 select-none'>
                         <div className='flex items-center justify-between w-full gap-4 mb-8'>
                             <div className='w-full'>
-                                <label class="lg:font-bold cursor-pointer text-xl" for="NameUser">
+                                <label className="lg:font-bold cursor-pointer text-xl" for="NameUser">
                                     Name
                                 </label>
-                                <input value={NameUser} onChange={(e) => setNameUser(e.target.value)} autoComplete="off" class="input-field mt-3 shadow appearance-none border rounded w-100 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="NameUser" type="text" placeholder='Username'></input>
+                                <input value={NameUser} onChange={(e) => setNameUser(e.target.value)} autoComplete="off" className="input-field mt-3 shadow appearance-none border rounded w-100 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="NameUser" type="text" placeholder='Username'></input>
                             </div>
                             <div className='w-full'>
-                                <label class="lg:font-bold cursor-pointer text-xl" for="PhoneNumber">
+                                <label className="lg:font-bold cursor-pointer text-xl" for="PhoneNumber">
                                     Phone Number
                                 </label>
-                                <input value={PhoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} autoComplete="off" class="input-field mt-3 shadow appearance-none border rounded w-100 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="PhoneNumber" type="text" maxLength="10" placeholder='9876543210'></input>
+                                <input value={PhoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} autoComplete="off" className="input-field mt-3 shadow appearance-none border rounded w-100 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="PhoneNumber" type="text" maxLength="10" placeholder='9876543210'></input>
                             </div>
                         </div>
-                        <label class="lg:font-bold cursor-pointer text-xl mb-3" for="EmailUser">
+                        <label className="lg:font-bold cursor-pointer text-xl mb-3" for="EmailUser">
                             Email
                         </label>
-                        <input value={EmailUser} onChange={(e) => setEmailUser(e.target.value)} autoComplete="off" class="shadow appearance-none border rounded w-100 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="EmailUser" type="email"></input>
+                        <input value={EmailUser} onChange={(e) => setEmailUser(e.target.value)} autoComplete="off" className="shadow appearance-none border rounded w-100 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="EmailUser" type="email"></input>
                         <button
                             type='submit'
                             className='px-6 py-2 mt-8 ml-auto text-xl font-bold text-black uppercase rounded-full bg-liteYellow'

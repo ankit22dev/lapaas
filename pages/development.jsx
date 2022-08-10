@@ -7,6 +7,7 @@ import Hero from '../components/development/Hero'
 import ProcessFlowThird from '../components/development/ProcessFlowThird'
 import ScrollingWhyUs from '../components/development/ScrollingWhyUs'
 import Form from '../components/development/Form'
+import AnimeRocket from '../components/common/AnimeRocket'
 
 
 const development = () => {
@@ -22,6 +23,7 @@ const development = () => {
                             <meta name='description' content='We turn your ideas into real products. We can help you with product development, engineering, prototyping, manufacturing, sourcing and more.' />
                         </Head>
                         <Hero comp={comp} />
+                        <AnimeRocket />
                         <ProcessFlowThird />
                         <ScrollingWhyUs />
                         {/* <Form /> */}

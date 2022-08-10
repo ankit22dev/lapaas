@@ -14,7 +14,7 @@ const ScrollingWhyUs = () => {
                     </div>
                 </div>
                 {/* <div className='w-1/2 overflow-y-auto scrolling-whyUs'> */}
-                <div className='w-full overflow-y-auto lg:w-1/2 scrolling-whyUs'>
+                <div className='w-full overflow-y-auto lg:w-1/2'>
                     <div className='flex items-center justify-center h-screen'>
                         <div className='max-w-lg px-4 text-center'>
                             <h1 className='heading'>Experienced Developers</h1>
