@@ -148,6 +148,13 @@ body {
   animation: animatedBackground2 150s linear infinite alternate;
 }
 
+.animeBox{
+    @apply absolute flex flex-col max-w-sm border py-3 px-4 gap-4 h-48
+}
+.animeBox-inner{
+    @apply flex flex-col max-w-sm border py-3 px-4 gap-4 h-48
+}
+
 @-webkit-keyframes animatedBackground {
   from {
     background-position: 0 0;

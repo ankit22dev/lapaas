@@ -19,8 +19,8 @@ const AnimeRocket = () => {
                             <Image src={Img6} alt="Img6" className='w-full h-full' />
                         </div>
                         <div className='absolute left-36 top-36 flex flex-col max-w-sm border p-5 gap-4 h-56'>
-                            <h2 className='font-bold text-2xl'>1. Market research</h2>
-                            <span>Market research refers to identifying the target audience for your audience because you wouldn’t wish to target everyone. Then we research  your competitor and analyse what they are offering and how they are marketing their product.</span>
+                            <h2 className='font-bold text-2xl'>1. Understand Your Business</h2>
+                            <span>First of all, we understand your business model and total available marketing (TAM), Serviceable available market (SAM) that help us to define your target audience. Then we will plan relevant actions to achieve your organisational goals and vision.</span>
                         </div>
                     </div>
                     <div className='h-screen sticky top-0 z-30'>
@@ -33,8 +33,8 @@ const AnimeRocket = () => {
                             </div>
                         </div>
                         <div className='absolute left-36 bottom-36 flex flex-col max-w-sm border p-5 gap-4 h-56'>
-                            <h2 className='font-bold text-2xl'>2. Prototyping</h2>
-                            <span>First we will create a low fidelity prototype that is a visual product interface of your product on paper. Then we will create a high fidelity prototype that is a detailed and realistic design with all real elements just like a real website.</span>
+                            <h2 className='font-bold text-2xl'>2. Frameworks</h2>
+                            <span>After understanding your business and target market, we will provide you access to our learning library and frameworks to help you to understand your business in detail and gives you more clarity. Then we focus on improving value streams.</span>
                         </div>
                     </div>
                     <div className='h-screen sticky top-0 z-50'>
@@ -42,8 +42,8 @@ const AnimeRocket = () => {
                             <Image src={Img1} alt="Img1" className='w-full h-full' />
                         </div>
                         <div className='absolute right-36 top-36 flex flex-col max-w-sm border p-5 gap-4 h-56'>
-                            <h2 className='font-bold text-2xl'>3. MVP Development</h2>
-                            <span>After the prototyping stage, we will launch a basic featured version of your product and test the product in the market. After launching the product we will focus on improving the value stream to avoid waste value to the customer.</span>
+                            <h2 className='font-bold text-2xl'>3. Guidance</h2>
+                            <span>After solving frameworks and understanding your business, we will discuss in detail about your problems and figure out how we can solve them. We will provide proper guidance in order to eliminate basic mistakes and give you proper direction.</span>
                         </div>
                     </div>
                     <div className='h-screen sticky top-0 z-40'>
@@ -56,8 +56,8 @@ const AnimeRocket = () => {
                             </div>
                         </div>
                         <div className='absolute right-36 bottom-36 flex flex-col max-w-sm border p-5 gap-4 h-56'>
-                            <h2 className='font-bold text-2xl'>4. Idea Validation</h2>
-                            <span>After successfully developing the MVP, we will test the MVP in the market. We will market your product and get feedback and reviews from the market then use an iteration of that data to improve the overall quality of your product.</span>
+                            <h2 className='font-bold text-2xl'>4. Actionable Worksheet</h2>
+                            <span>After understanding everything about your business, then you have to start taking action and executing all the strategies. We will provide you with an actionable worksheet that will give you direction, how you should implement your actions.</span>
                         </div>
                     </div>
                     <div className='h-screen sticky top-0 z-40'>
