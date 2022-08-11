@@ -16,38 +16,40 @@ import ProcessFlowFourth from "../components/marketing/ProcessFlowFourth.jsx";
 import Suggestion from "../components/marketing/Suggestion.jsx";
 import Form from "../components/marketing/Form.jsx";
 import ScrollingWhyUs from "../components/marketing/ScrollingWhyUs.jsx";
+import AnimeRocket from "../components/marketing/AnimeRocket.jsx";
 
 const Marketing = () => {
-  return (
-    <>
-      <ReactFullpage
-        navigation
-        render={(comp) => (
-          <ReactFullpage.Wrapper>
-            <Head>
-              <title>
-                Marketing Services to Get most out of your Resources
-              </title>
-              <meta
-                name="description"
-                content="With over 11 years experience in the Marketing Services field, our team of specialists will help you get an edge on your competition."
-              />
-            </Head>
-            <Hero comp={comp} />
-            <TwoCards comp={comp} />
-            <ProcessFlowThird />
-            <ProcessFlowFourth />
-            <MarketingProcess />
-            <Suggestion />
-            {/* <D2C />
+    return (
+        <>
+            <ReactFullpage
+                navigation
+                render={(comp) => (
+                    <ReactFullpage.Wrapper>
+                        <Head>
+                            <title>
+                                Marketing Services to Get most out of your Resources
+                            </title>
+                            <meta
+                                name="description"
+                                content="With over 11 years experience in the Marketing Services field, our team of specialists will help you get an edge on your competition."
+                            />
+                        </Head>
+                        <Hero comp={comp} />
+                        <TwoCards comp={comp} />
+                        <ProcessFlowThird />
+                        <ProcessFlowFourth />
+                        {/* <MarketingProcess /> */}
+                        <AnimeRocket />
+                        <Suggestion />
+                        {/* <D2C />
                         <B2B /> */}
-            <ScrollingWhyUs />
-            {/* <Form /> */}
-          </ReactFullpage.Wrapper>
-        )}
-      />
-    </>
-  );
+                        <ScrollingWhyUs />
+                        {/* <Form /> */}
+                    </ReactFullpage.Wrapper>
+                )}
+            />
+        </>
+    );
 };
 
 Marketing.layout = "default";

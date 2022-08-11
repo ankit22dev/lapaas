@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const Header = ({ setIsNavOpen }) => {
     return (
-        <div className='fixed top-0 left-0 flex items-center justify-center w-screen h-16 px-6 z-[101] md:z-[10]'>
+        <div className='fixed top-0 left-0 flex items-center justify-center w-screen h-16 px-6 z-10'>
             <div className='flex items-center justify-between w-full max-w-7xl max-auto'>
                 <Link href='/'>
                     <a className='w-32'>

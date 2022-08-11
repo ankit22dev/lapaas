@@ -5,6 +5,7 @@ import TopHero from '../components/consultation/TopHero'
 import Suggestion from '../components/consultation/Suggestion'
 import ScrollingWhyUs from '../components/consultation/ScrollingWhyUs'
 import Form from '../components/consultation/Form'
+import AnimeRocket from '../components/consultation/AnimeRocket'
 // components
 
 
@@ -23,6 +24,7 @@ const consultation = () => {
                             </Head>
                             <TopHero comp={comp} />
                             <Suggestion />
+                            <AnimeRocket />
                             <ScrollingWhyUs />
                             {/* <Form /> */}
                         </ReactFullpage.Wrapper>

@@ -18,9 +18,9 @@ const AnimeRocket = () => {
                         <div className='absolute scale-[1.8] top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2'>
                             <Image src={Img6} alt="Img6" className='w-full h-full' />
                         </div>
-                        <div className='absolute left-36 top-36 flex flex-col max-w-sm border p-5 gap-4 h-56'>
-                            <h2 className='font-bold text-2xl'>1. Market research</h2>
-                            <span>Market research refers to identifying the target audience for your audience because you wouldn’t wish to target everyone. Then we research  your competitor and analyse what they are offering and how they are marketing their product.</span>
+                        <div className='animeBox left-36 top-24'>
+                            <h2 className='font-bold text-2xl capitalize'>1. Market research</h2>
+                            <span>First of all, we understand your business and the feasibility of the business. Then we identify the target market and try to develop potential new markets. Then we decide how, when and where the product should enter the market.</span>
                         </div>
                     </div>
                     <div className='h-screen sticky top-0 z-30'>
@@ -32,18 +32,24 @@ const AnimeRocket = () => {
                                 <Image src={Img5} alt="Img5" className='w-full h-full' />
                             </div>
                         </div>
-                        <div className='absolute left-36 bottom-36 flex flex-col max-w-sm border p-5 gap-4 h-56'>
-                            <h2 className='font-bold text-2xl'>2. Prototyping</h2>
-                            <span>First we will create a low fidelity prototype that is a visual product interface of your product on paper. Then we will create a high fidelity prototype that is a detailed and realistic design with all real elements just like a real website.</span>
+                        <div className='absolute left-36 top-[40%] flex flex-col max-w-sm gap-4'>
+                            <div className='animeBox-inner'>
+                                <h2 className='font-bold text-2xl capitalize'>2. Competitor Analysis</h2>
+                                <span>We research your competitors, what are their USP’s, pricing, market share, etc. We analyse how your competitor markets their products/services, what marketing tactics they are following and how they are engaging with their customers.</span>
+                            </div>
+                            <div className='animeBox-inner'>
+                                <h2 className='font-bold text-2xl capitalize'>3. Strategy formulation</h2>
+                                <span>We make custom strategies on the behalf of the information we gathered and take the most appropriate actions to achieve your organisational vision.</span>
+                            </div>
                         </div>
                     </div>
                     <div className='h-screen sticky top-0 z-50'>
                         <div className='absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2 scale-75'>
                             <Image src={Img1} alt="Img1" className='w-full h-full' />
                         </div>
-                        <div className='absolute right-36 top-36 flex flex-col max-w-sm border p-5 gap-4 h-56'>
-                            <h2 className='font-bold text-2xl'>3. MVP Development</h2>
-                            <span>After the prototyping stage, we will launch a basic featured version of your product and test the product in the market. After launching the product we will focus on improving the value stream to avoid waste value to the customer.</span>
+                        <div className='animeBox right-36 top-24'>
+                            <h2 className='font-bold text-2xl capitalize'>4. Execution </h2>
+                            <span>After creating strategies, we will implement all actions in the best possible way, so the product/service can reach the maximum audience.</span>
                         </div>
                     </div>
                     <div className='h-screen sticky top-0 z-40'>
@@ -55,9 +61,15 @@ const AnimeRocket = () => {
                                 <Image src={Img2} alt="Img2" className='w-full h-full' />
                             </div>
                         </div>
-                        <div className='absolute right-36 bottom-36 flex flex-col max-w-sm border p-5 gap-4 h-56'>
-                            <h2 className='font-bold text-2xl'>4. Idea Validation</h2>
-                            <span>After successfully developing the MVP, we will test the MVP in the market. We will market your product and get feedback and reviews from the market then use an iteration of that data to improve the overall quality of your product.</span>
+                        <div className='absolute right-36 top-[40%] flex flex-col max-w-sm gap-4'>
+                            <div className='animeBox-inner'>
+                                <h2 className='font-bold text-2xl capitalize'>5. Measure</h2>
+                                <span>After properly executing actions, we gather the data and analyse it to make more improvements in the product/service.</span>
+                            </div>
+                            <div className='animeBox-inner'>
+                                <h2 className='font-bold text-2xl capitalize'>6. Report</h2>
+                                <span>We provide a detailed report sheet to our clients of their campaign’s activity.</span>
+                            </div>
                         </div>
                     </div>
                     <div className='h-screen sticky top-0 z-40'>
