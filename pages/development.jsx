@@ -7,7 +7,7 @@ import Hero from '../components/development/Hero'
 import ProcessFlowThird from '../components/development/ProcessFlowThird'
 import ScrollingWhyUs from '../components/development/ScrollingWhyUs'
 import Form from '../components/development/Form'
-import AnimeRocket from '../components/common/AnimeRocket'
+import AnimeRocket from '../components/development/AnimeRocket'
 
 
 const development = () => {
