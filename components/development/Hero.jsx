@@ -200,7 +200,7 @@ const Hero = ({ comp }) => {
                                                     valueLabelDisplay="auto"
                                                     min={20000}
                                                     max={1000000}
-                                                    value={PriceRange}
+                                                    // value={PriceRange}
                                                     onChange={(e) => setPriceRange(e.target.value)}
                                                 />
                                             </div>
